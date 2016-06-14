@@ -1,0 +1,220 @@
+{
+    "caller-id": "05e7a5440b", 
+    "turns": [
+        {
+            "turn-index": 0, 
+            "goal-labels": {
+                "area": "east"
+            }, 
+            "transcription": "i need a restaurant in the east part of town", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0000959_0001145.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "area", 
+                                "east"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(type=restaurant,area=east)"
+            }
+        }, 
+        {
+            "turn-index": 1, 
+            "goal-labels": {
+                "food": "traditional", 
+                "area": "east"
+            }, 
+            "transcription": "traditional food", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0001545_0001629.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "traditional"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(food=traditional)"
+            }
+        }, 
+        {
+            "turn-index": 2, 
+            "goal-labels": {
+                "food": "indian", 
+                "area": "east"
+            }, 
+            "transcription": "how about indian food", 
+            "method-label": "byalternatives", 
+            "audio-file": "pt344x_0002308_0002418.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "reqalts"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "indian"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "reqalts(food=indian)"
+            }
+        }, 
+        {
+            "turn-index": 3, 
+            "goal-labels": {
+                "food": "indian", 
+                "area": "east"
+            }, 
+            "transcription": "how about indian food", 
+            "method-label": "byalternatives", 
+            "audio-file": "pt344x_0003081_0003231.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "reqalts"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "indian"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "reqalts(food=indian)"
+            }
+        }, 
+        {
+            "turn-index": 4, 
+            "goal-labels": {
+                "food": "indian", 
+                "area": "east"
+            }, 
+            "transcription": "can i get the address", 
+            "method-label": "byalternatives", 
+            "audio-file": "pt344x_0003919_0004006.wav", 
+            "requested-slots": [
+                "addr"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "addr"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(addr)"
+            }
+        }, 
+        {
+            "turn-index": 5, 
+            "goal-labels": {
+                "food": "indian", 
+                "area": "east"
+            }, 
+            "transcription": "can i get the phone number", 
+            "method-label": "byalternatives", 
+            "audio-file": "pt344x_0004702_0004802.wav", 
+            "requested-slots": [
+                "phone"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "phone"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(phone)"
+            }
+        }, 
+        {
+            "turn-index": 6, 
+            "goal-labels": {
+                "food": "indian", 
+                "area": "east"
+            }, 
+            "transcription": "thank you good bye", 
+            "method-label": "finished", 
+            "audio-file": "pt344x_0005727_0005811.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "thankyou"
+                    }, 
+                    {
+                        "slots": [], 
+                        "act": "bye"
+                    }
+                ], 
+                "cam": "thankyou()|bye()"
+            }
+        }
+    ], 
+    "task-information": {
+        "goal": {
+            "text": "Task 09699: You are looking for a restaurant in the east part of town and it should serve traditional food. If there is no such venue how about indian type of food. Make sure you get the address and phone number.", 
+            "request-slots": [
+                "addr", 
+                "phone"
+            ], 
+            "constraints": [
+                [
+                    "food", 
+                    "indian"
+                ], 
+                [
+                    "area", 
+                    "east"
+                ]
+            ]
+        }, 
+        "feedback": {
+            "questionnaire": [
+                [
+                    "The system understood me well.", 
+                    "agree"
+                ]
+            ], 
+            "comments": "none", 
+            "success": true
+        }
+    }, 
+    "session-id": "voip-05e7a5440b-20130328_211413"
+}

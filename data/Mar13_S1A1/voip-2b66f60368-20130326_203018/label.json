@@ -1,0 +1,236 @@
+{
+    "caller-id": "2b66f60368", 
+    "turns": [
+        {
+            "turn-index": 0, 
+            "goal-labels": {
+                "food": "christmas"
+            }, 
+            "transcription": "i need a special restaurant serving christmas food", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0000951_0001285.wav", 
+            "requested-slots": [
+                "signature"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "signature"
+                            ]
+                        ], 
+                        "act": "request"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "christmas"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "request(signature,type=restaurant,food=christmas)"
+            }
+        }, 
+        {
+            "turn-index": 1, 
+            "goal-labels": {
+                "food": "british"
+            }, 
+            "transcription": "what about british food", 
+            "method-label": "byalternatives", 
+            "audio-file": "pt344x_0001965_0002093.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "reqalts"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "british"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "reqalts(food=british)"
+            }
+        }, 
+        {
+            "turn-index": 2, 
+            "goal-labels": {
+                "food": "british", 
+                "pricerange": "expensive"
+            }, 
+            "transcription": "i need an expensive restaurant serving british food", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002714_0002982.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "british"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "pricerange", 
+                                "expensive"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(pricerange=expensive,type=restaurant,food=british)"
+            }
+        }, 
+        {
+            "turn-index": 3, 
+            "goal-labels": {
+                "food": "british", 
+                "pricerange": "expensive"
+            }, 
+            "transcription": "no", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0003436_0003479.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "negate"
+                    }
+                ], 
+                "cam": "negate()"
+            }
+        }, 
+        {
+            "turn-index": 4, 
+            "goal-labels": {
+                "food": "british", 
+                "pricerange": "expensive"
+            }, 
+            "transcription": "i need an expensive restaurant serving british food", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0004047_0004371.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "british"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "pricerange", 
+                                "expensive"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(pricerange=expensive,type=restaurant,food=british)"
+            }
+        }, 
+        {
+            "turn-index": 5, 
+            "goal-labels": {
+                "food": "british", 
+                "pricerange": "expensive"
+            }, 
+            "transcription": "can i get the phone number", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0005023_0005131.wav", 
+            "requested-slots": [
+                "phone"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "phone"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(phone)"
+            }
+        }, 
+        {
+            "turn-index": 6, 
+            "goal-labels": {
+                "food": "british", 
+                "pricerange": "expensive"
+            }, 
+            "transcription": "thank you good bye", 
+            "method-label": "finished", 
+            "audio-file": "pt344x_0005999_0006089.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "thankyou"
+                    }, 
+                    {
+                        "slots": [], 
+                        "act": "bye"
+                    }
+                ], 
+                "cam": "thankyou()|bye()"
+            }
+        }
+    ], 
+    "task-information": {
+        "goal": {
+            "text": "Task 11379: You are looking for an expensive restaurant and it should serve christmas food. If there is no such venue how about british type of food. You want to know the phone number.", 
+            "request-slots": [
+                "phone"
+            ], 
+            "constraints": [
+                [
+                    "food", 
+                    "british"
+                ], 
+                [
+                    "pricerange", 
+                    "expensive"
+                ]
+            ]
+        }, 
+        "feedback": {
+            "questionnaire": [
+                [
+                    "The system understood me well.", 
+                    "slightly disagree"
+                ]
+            ], 
+            "comments": "I had to over-enunciate the word \"British\" to make it understand I was switching food types.", 
+            "success": true
+        }
+    }, 
+    "session-id": "voip-2b66f60368-20130326_203018"
+}

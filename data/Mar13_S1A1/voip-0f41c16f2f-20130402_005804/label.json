@@ -1,0 +1,107 @@
+{
+    "caller-id": "0f41c16f2f", 
+    "turns": [
+        {
+            "turn-index": 0, 
+            "goal-labels": {
+                "pricerange": "cheap"
+            }, 
+            "transcription": "cheap restaurant", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0000994_0001103.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "pricerange", 
+                                "cheap"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(pricerange=cheap,type=restaurant)"
+            }
+        }, 
+        {
+            "turn-index": 1, 
+            "goal-labels": {
+                "food": "korean", 
+                "pricerange": "cheap"
+            }, 
+            "transcription": "korean food", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0001733_0001867.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "korean"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(food=korean)"
+            }
+        }, 
+        {
+            "turn-index": 2, 
+            "goal-labels": {
+                "food": "korean", 
+                "pricerange": "cheap"
+            }, 
+            "transcription": "thank you good bye", 
+            "method-label": "finished", 
+            "audio-file": "pt344x_0002579_0002683.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "thankyou"
+                    }, 
+                    {
+                        "slots": [], 
+                        "act": "bye"
+                    }
+                ], 
+                "cam": "thankyou()|bye()"
+            }
+        }
+    ], 
+    "task-information": {
+        "goal": {
+            "text": "Task 02451: You are looking for a cheap restaurant and it should serve korean food. If there is no such venue how about any price range. Make sure you get the phone number of the venue.", 
+            "request-slots": [
+                "phone"
+            ], 
+            "constraints": [
+                [
+                    "food", 
+                    "korean"
+                ], 
+                [
+                    "pricerange", 
+                    "dontcare"
+                ]
+            ]
+        }, 
+        "feedback": {
+            "questionnaire": [
+                [
+                    "The system understood me well.", 
+                    "agree"
+                ]
+            ], 
+            "comments": null, 
+            "success": false
+        }
+    }, 
+    "session-id": "voip-0f41c16f2f-20130402_005804"
+}

@@ -1,0 +1,216 @@
+{
+    "caller-id": "10beae627f", 
+    "turns": [
+        {
+            "turn-index": 0, 
+            "goal-labels": {
+                "pricerange": "moderate"
+            }, 
+            "transcription": "i want to find a moderately priced restaurant and it should be in the", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0000956_0001296.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "pricerange", 
+                                "moderate"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(pricerange=moderate,type=restaurant)"
+            }
+        }, 
+        {
+            "turn-index": 1, 
+            "goal-labels": {
+                "pricerange": "moderate", 
+                "area": "south"
+            }, 
+            "transcription": "south", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0001705_0001740.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "area", 
+                                "south"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(area=south)"
+            }
+        }, 
+        {
+            "turn-index": 2, 
+            "goal-labels": {
+                "pricerange": "moderate", 
+                "area": "south"
+            }, 
+            "transcription": "south part of town south", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002134_0002352.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "area", 
+                                "south"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(area=south)"
+            }
+        }, 
+        {
+            "turn-index": 3, 
+            "goal-labels": {
+                "food": "dontcare", 
+                "pricerange": "moderate", 
+                "area": "south"
+            }, 
+            "transcription": "any", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002783_0002832.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "this", 
+                                "dontcare"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(=dontcare)"
+            }
+        }, 
+        {
+            "turn-index": 4, 
+            "goal-labels": {
+                "food": "dontcare", 
+                "pricerange": "moderate", 
+                "area": "south"
+            }, 
+            "transcription": "whats the address", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0003620_0003712.wav", 
+            "requested-slots": [
+                "addr"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "addr"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(addr)"
+            }
+        }, 
+        {
+            "turn-index": 5, 
+            "goal-labels": {
+                "food": "dontcare", 
+                "pricerange": "moderate", 
+                "area": "south"
+            }, 
+            "transcription": "and the post code", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0004514_0004626.wav", 
+            "requested-slots": [
+                "postcode"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "postcode"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(postcode)"
+            }
+        }, 
+        {
+            "turn-index": 6, 
+            "goal-labels": {
+                "food": "dontcare", 
+                "pricerange": "moderate", 
+                "area": "south"
+            }, 
+            "transcription": "thank you good bye", 
+            "method-label": "finished", 
+            "audio-file": "pt344x_0005363_0005483.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "thankyou"
+                    }, 
+                    {
+                        "slots": [], 
+                        "act": "bye"
+                    }
+                ], 
+                "cam": "thankyou()|bye()"
+            }
+        }
+    ], 
+    "task-information": {
+        "goal": {
+            "text": "Task 07260: You want to find a moderately priced restaurant and it should be in the south part of town. You want to know the address and postcode of the venue.", 
+            "request-slots": [
+                "addr", 
+                "postcode"
+            ], 
+            "constraints": [
+                [
+                    "pricerange", 
+                    "moderate"
+                ], 
+                [
+                    "area", 
+                    "south"
+                ]
+            ]
+        }, 
+        "feedback": {
+            "questionnaire": [
+                [
+                    "The system understood me well.", 
+                    "slightly disagree"
+                ]
+            ], 
+            "comments": null, 
+            "success": true
+        }
+    }, 
+    "session-id": "voip-10beae627f-20130328_165245"
+}

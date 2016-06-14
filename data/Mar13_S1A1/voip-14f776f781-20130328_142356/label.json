@@ -1,0 +1,233 @@
+{
+    "caller-id": "14f776f781", 
+    "turns": [
+        {
+            "turn-index": 0, 
+            "goal-labels": {}, 
+            "transcription": "sil", 
+            "method-label": "none", 
+            "audio-file": "pt344x_0000571_0000592.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [], 
+                "cam": "null()"
+            }
+        }, 
+        {
+            "turn-index": 1, 
+            "goal-labels": {
+                "food": "basque", 
+                "pricerange": "expensive"
+            }, 
+            "transcription": "im looking for an expensive restaurant that serves basque food", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0001023_0001426.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "basque"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "pricerange", 
+                                "expensive"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(food=basque,pricerange=expensive,type=restaurant,task=find)"
+            }
+        }, 
+        {
+            "turn-index": 2, 
+            "goal-labels": {
+                "food": "basque", 
+                "pricerange": "expensive"
+            }, 
+            "transcription": "yes", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002045_0002104.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "affirm"
+                    }
+                ], 
+                "cam": "affirm()"
+            }
+        }, 
+        {
+            "turn-index": 3, 
+            "goal-labels": {
+                "food": "korean", 
+                "pricerange": "expensive"
+            }, 
+            "transcription": "how about korean food", 
+            "method-label": "byalternatives", 
+            "audio-file": "pt344x_0002633_0002826.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "reqalts"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "korean"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "reqalts(food=korean)"
+            }
+        }, 
+        {
+            "turn-index": 4, 
+            "goal-labels": {
+                "food": "korean", 
+                "pricerange": "expensive"
+            }, 
+            "transcription": "korean food", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0003528_0003641.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "korean"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(food=korean)"
+            }
+        }, 
+        {
+            "turn-index": 5, 
+            "goal-labels": {
+                "food": "korean", 
+                "pricerange": "expensive"
+            }, 
+            "transcription": "what is the address", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0004225_0004386.wav", 
+            "requested-slots": [
+                "addr"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "addr"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(addr)"
+            }
+        }, 
+        {
+            "turn-index": 6, 
+            "goal-labels": {
+                "food": "korean", 
+                "pricerange": "expensive"
+            }, 
+            "transcription": "and the area", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0005021_0005139.wav", 
+            "requested-slots": [
+                "area"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "area"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(area)"
+            }
+        }, 
+        {
+            "turn-index": 7, 
+            "goal-labels": {
+                "food": "korean", 
+                "pricerange": "expensive"
+            }, 
+            "transcription": "thank you good bye", 
+            "method-label": "finished", 
+            "audio-file": "pt344x_0005723_0005847.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "thankyou"
+                    }, 
+                    {
+                        "slots": [], 
+                        "act": "bye"
+                    }
+                ], 
+                "cam": "thankyou()|bye()"
+            }
+        }
+    ], 
+    "task-information": {
+        "goal": {
+            "text": "Task 04005: You are looking for an expensive restaurant and it should serve basque food. If there is no such venue how about korean type of food. Make sure you get the address and area of the venue.", 
+            "request-slots": [
+                "addr", 
+                "area"
+            ], 
+            "constraints": [
+                [
+                    "food", 
+                    "korean"
+                ], 
+                [
+                    "pricerange", 
+                    "expensive"
+                ]
+            ]
+        }, 
+        "feedback": {
+            "questionnaire": [
+                [
+                    "The system understood me well.", 
+                    "agree"
+                ]
+            ], 
+            "comments": null, 
+            "success": true
+        }
+    }, 
+    "session-id": "voip-14f776f781-20130328_142356"
+}

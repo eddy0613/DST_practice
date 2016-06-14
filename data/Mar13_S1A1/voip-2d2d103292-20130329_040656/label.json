@@ -1,0 +1,203 @@
+{
+    "caller-id": "2d2d103292", 
+    "turns": [
+        {
+            "turn-index": 0, 
+            "goal-labels": {
+                "food": "japanese", 
+                "area": "east"
+            }, 
+            "transcription": "im looking for a japanese restaurant in the east part", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0000888_0001297.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "japanese"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "area", 
+                                "east"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(area=east,food=japanese,type=restaurant,task=find)"
+            }
+        }, 
+        {
+            "turn-index": 1, 
+            "goal-labels": {
+                "food": "indian", 
+                "area": "east"
+            }, 
+            "transcription": "im looking for an indian restaurant in the", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002003_0002238.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "indian"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(type=restaurant,food=indian,task=find)"
+            }
+        }, 
+        {
+            "turn-index": 2, 
+            "goal-labels": {
+                "food": "indian", 
+                "area": "east"
+            }, 
+            "transcription": "yes", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002659_0002723.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "affirm"
+                    }
+                ], 
+                "cam": "affirm()"
+            }
+        }, 
+        {
+            "turn-index": 3, 
+            "goal-labels": {
+                "food": "indian", 
+                "pricerange": "dontcare", 
+                "area": "east"
+            }, 
+            "transcription": "i dont care", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0003324_0003413.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "this", 
+                                "dontcare"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(=dontcare)"
+            }
+        }, 
+        {
+            "turn-index": 4, 
+            "goal-labels": {
+                "food": "indian", 
+                "pricerange": "dontcare", 
+                "area": "east"
+            }, 
+            "transcription": "what is the address and phone number", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0004181_0004367.wav", 
+            "requested-slots": [
+                "phone", 
+                "addr"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "addr"
+                            ]
+                        ], 
+                        "act": "request"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "phone"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(addr,phone)"
+            }
+        }, 
+        {
+            "turn-index": 5, 
+            "goal-labels": {
+                "food": "indian", 
+                "pricerange": "dontcare", 
+                "area": "east"
+            }, 
+            "transcription": "thank you good bye", 
+            "method-label": "finished", 
+            "audio-file": "pt344x_0005573_0005686.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "thankyou"
+                    }, 
+                    {
+                        "slots": [], 
+                        "act": "bye"
+                    }
+                ], 
+                "cam": "thankyou()|bye()"
+            }
+        }
+    ], 
+    "task-information": {
+        "goal": {
+            "text": "Task 02664: You want to find a restaurant in the east part of town and it should serve japanese food. If there is no such venue how about indian type of food. Make sure you get the address and phone number of the venue.", 
+            "request-slots": [
+                "addr", 
+                "phone"
+            ], 
+            "constraints": [
+                [
+                    "food", 
+                    "indian"
+                ], 
+                [
+                    "area", 
+                    "east"
+                ]
+            ]
+        }, 
+        "feedback": {
+            "questionnaire": [
+                [
+                    "The system understood me well.", 
+                    "agree"
+                ]
+            ], 
+            "comments": null, 
+            "success": true
+        }
+    }, 
+    "session-id": "voip-2d2d103292-20130329_040656"
+}

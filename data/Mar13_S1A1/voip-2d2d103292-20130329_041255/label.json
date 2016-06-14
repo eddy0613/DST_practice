@@ -1,0 +1,164 @@
+{
+    "caller-id": "2d2d103292", 
+    "turns": [
+        {
+            "turn-index": 0, 
+            "goal-labels": {
+                "food": "bistro", 
+                "area": "centre"
+            }, 
+            "transcription": "im looking for bistro food in the center of town", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0000951_0001270.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "bistro"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "area", 
+                                "centre"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(food=bistro,task=find,area=centre)"
+            }
+        }, 
+        {
+            "turn-index": 1, 
+            "goal-labels": {
+                "food": "north american", 
+                "area": "centre"
+            }, 
+            "transcription": "im looking for north american food", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0001999_0002211.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "north american"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(food=\"north american\",task=find)"
+            }
+        }, 
+        {
+            "turn-index": 2, 
+            "goal-labels": {
+                "food": "north american", 
+                "area": "centre"
+            }, 
+            "transcription": "right", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002678_0002734.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "affirm"
+                    }
+                ], 
+                "cam": "affirm()"
+            }
+        }, 
+        {
+            "turn-index": 3, 
+            "goal-labels": {
+                "food": "north american", 
+                "area": "centre"
+            }, 
+            "transcription": "whats the phone number", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0003534_0003652.wav", 
+            "requested-slots": [
+                "phone"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "phone"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(phone)"
+            }
+        }, 
+        {
+            "turn-index": 4, 
+            "goal-labels": {
+                "food": "north american", 
+                "area": "centre"
+            }, 
+            "transcription": "thank you good bye", 
+            "method-label": "finished", 
+            "audio-file": "pt344x_0004495_0004591.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "thankyou"
+                    }, 
+                    {
+                        "slots": [], 
+                        "act": "bye"
+                    }
+                ], 
+                "cam": "thankyou()|bye()"
+            }
+        }
+    ], 
+    "task-information": {
+        "goal": {
+            "text": "Task 00444: You are looking for a restaurant in the centre and it should serve bistro food. If there is no such venue how about north american type of food. You want to know the phone number.", 
+            "request-slots": [
+                "phone"
+            ], 
+            "constraints": [
+                [
+                    "food", 
+                    "north american"
+                ], 
+                [
+                    "area", 
+                    "centre"
+                ]
+            ]
+        }, 
+        "feedback": {
+            "questionnaire": [
+                [
+                    "The system understood me well.", 
+                    "strongly agree"
+                ]
+            ], 
+            "comments": null, 
+            "success": true
+        }
+    }, 
+    "session-id": "voip-2d2d103292-20130329_041255"
+}

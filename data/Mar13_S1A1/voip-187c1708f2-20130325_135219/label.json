@@ -1,0 +1,208 @@
+{
+    "caller-id": "187c1708f2", 
+    "turns": [
+        {
+            "turn-index": 0, 
+            "goal-labels": {
+                "food": "portuguese"
+            }, 
+            "transcription": "portuguese", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0000906_0000989.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "portuguese"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(food=portuguese)"
+            }
+        }, 
+        {
+            "turn-index": 1, 
+            "goal-labels": {
+                "food": "portuguese", 
+                "area": "dontcare"
+            }, 
+            "transcription": "it doesnt matter", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0001357_0001442.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "this", 
+                                "dontcare"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(=dontcare)"
+            }
+        }, 
+        {
+            "turn-index": 2, 
+            "goal-labels": {
+                "food": "portuguese", 
+                "area": "dontcare"
+            }, 
+            "transcription": "yea", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0001922_0001949.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "affirm"
+                    }
+                ], 
+                "cam": "affirm()"
+            }
+        }, 
+        {
+            "turn-index": 3, 
+            "goal-labels": {
+                "food": "portuguese", 
+                "area": "dontcare"
+            }, 
+            "transcription": "phone number", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002434_0002499.wav", 
+            "requested-slots": [
+                "phone"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "phone"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(phone)"
+            }
+        }, 
+        {
+            "turn-index": 4, 
+            "goal-labels": {
+                "food": "portuguese", 
+                "area": "dontcare"
+            }, 
+            "transcription": "phone number", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002948_0003013.wav", 
+            "requested-slots": [
+                "phone"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "phone"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(phone)"
+            }
+        }, 
+        {
+            "turn-index": 5, 
+            "goal-labels": {
+                "food": "portuguese", 
+                "area": "dontcare"
+            }, 
+            "transcription": "price range", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0003802_0003894.wav", 
+            "requested-slots": [
+                "pricerange"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "pricerange"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(pricerange)"
+            }
+        }, 
+        {
+            "turn-index": 6, 
+            "goal-labels": {
+                "food": "portuguese", 
+                "area": "dontcare"
+            }, 
+            "transcription": "thank you good bye", 
+            "method-label": "finished", 
+            "audio-file": "pt344x_0004339_0004465.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "thankyou"
+                    }, 
+                    {
+                        "slots": [], 
+                        "act": "bye"
+                    }
+                ], 
+                "cam": "thankyou()|bye()"
+            }
+        }
+    ], 
+    "task-information": {
+        "goal": {
+            "text": "Task 00639: You are looking for and it should serve portuguese food. You don't care about the price range. Make sure you get the phone number.", 
+            "request-slots": [
+                "phone"
+            ], 
+            "constraints": [
+                [
+                    "food", 
+                    "portuguese"
+                ], 
+                [
+                    "pricerange", 
+                    "dontcare"
+                ]
+            ]
+        }, 
+        "feedback": {
+            "questionnaire": [
+                [
+                    "The system understood me well.", 
+                    "strongly agree"
+                ]
+            ], 
+            "comments": null, 
+            "success": true
+        }
+    }, 
+    "session-id": "voip-187c1708f2-20130325_135219"
+}

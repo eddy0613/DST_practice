@@ -1,0 +1,243 @@
+{
+    "caller-id": "21ec2b7850", 
+    "turns": [
+        {
+            "turn-index": 0, 
+            "goal-labels": {
+                "pricerange": "cheap"
+            }, 
+            "transcription": "cheap", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0001001_0001027.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "pricerange", 
+                                "cheap"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(pricerange=cheap)"
+            }
+        }, 
+        {
+            "turn-index": 1, 
+            "goal-labels": {
+                "pricerange": "cheap", 
+                "area": "dontcare"
+            }, 
+            "transcription": "any", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0001465_0001503.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "this", 
+                                "dontcare"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(=dontcare)"
+            }
+        }, 
+        {
+            "turn-index": 2, 
+            "goal-labels": {
+                "food": "mediterranean", 
+                "pricerange": "cheap", 
+                "area": "dontcare"
+            }, 
+            "transcription": "mediterranean", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0001872_0001972.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "mediterranean"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(food=mediterranean)"
+            }
+        }, 
+        {
+            "turn-index": 3, 
+            "goal-labels": {
+                "food": "mediterranean", 
+                "pricerange": "cheap", 
+                "area": "dontcare"
+            }, 
+            "transcription": "phone number", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002720_0002779.wav", 
+            "requested-slots": [
+                "phone"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "phone"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(phone)"
+            }
+        }, 
+        {
+            "turn-index": 4, 
+            "goal-labels": {
+                "food": "mediterranean", 
+                "pricerange": "cheap", 
+                "area": "dontcare"
+            }, 
+            "transcription": "phone", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0003276_0003326.wav", 
+            "requested-slots": [
+                "phone"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "phone"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(phone)"
+            }
+        }, 
+        {
+            "turn-index": 5, 
+            "goal-labels": {
+                "food": "mediterranean", 
+                "pricerange": "cheap", 
+                "area": "dontcare"
+            }, 
+            "transcription": "address", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0003714_0003780.wav", 
+            "requested-slots": [
+                "addr"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "addr"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(addr)"
+            }
+        }, 
+        {
+            "turn-index": 6, 
+            "goal-labels": {
+                "food": "mediterranean", 
+                "pricerange": "cheap", 
+                "area": "dontcare"
+            }, 
+            "transcription": "phone number", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0004465_0004522.wav", 
+            "requested-slots": [
+                "phone"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "phone"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(phone)"
+            }
+        }, 
+        {
+            "turn-index": 7, 
+            "goal-labels": {
+                "food": "mediterranean", 
+                "pricerange": "cheap", 
+                "area": "dontcare"
+            }, 
+            "transcription": "goodbye", 
+            "method-label": "finished", 
+            "audio-file": "pt344x_0005463_0005512.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "bye"
+                    }
+                ], 
+                "cam": "bye()"
+            }
+        }
+    ], 
+    "task-information": {
+        "goal": {
+            "text": "Task 06729: You are looking for a cheap restaurant and it should serve mediterranean food. Make sure you get the phone number and address of the venue.", 
+            "request-slots": [
+                "phone", 
+                "addr"
+            ], 
+            "constraints": [
+                [
+                    "food", 
+                    "mediterranean"
+                ], 
+                [
+                    "pricerange", 
+                    "cheap"
+                ]
+            ]
+        }, 
+        "feedback": {
+            "questionnaire": [
+                [
+                    "The system understood me well.", 
+                    "agree"
+                ]
+            ], 
+            "comments": "Had some trouble understanding me asking for the phone number, but other than that very smooth.", 
+            "success": true
+        }
+    }, 
+    "session-id": "voip-21ec2b7850-20130325_162417"
+}

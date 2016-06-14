@@ -1,0 +1,191 @@
+{
+    "caller-id": "1b51204ef5", 
+    "turns": [
+        {
+            "turn-index": 0, 
+            "goal-labels": {
+                "area": "dontcare"
+            }, 
+            "transcription": "id like a restaurant in any area", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0000915_0001098.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "area", 
+                                "dontcare"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(type=restaurant,area=dontcare)"
+            }
+        }, 
+        {
+            "turn-index": 1, 
+            "goal-labels": {
+                "food": "international", 
+                "area": "dontcare"
+            }, 
+            "transcription": "international food", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0001445_0001554.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "international"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(food=international)"
+            }
+        }, 
+        {
+            "turn-index": 2, 
+            "goal-labels": {
+                "food": "international", 
+                "pricerange": "cheap", 
+                "area": "dontcare"
+            }, 
+            "transcription": "cheap", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002101_0002144.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "pricerange", 
+                                "cheap"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(pricerange=cheap)"
+            }
+        }, 
+        {
+            "turn-index": 3, 
+            "goal-labels": {
+                "food": "international", 
+                "pricerange": "cheap", 
+                "area": "dontcare"
+            }, 
+            "transcription": "address", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002694_0002756.wav", 
+            "requested-slots": [
+                "addr"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "addr"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(addr)"
+            }
+        }, 
+        {
+            "turn-index": 4, 
+            "goal-labels": {
+                "food": "international", 
+                "pricerange": "cheap", 
+                "area": "dontcare"
+            }, 
+            "transcription": "phone number", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0003306_0003377.wav", 
+            "requested-slots": [
+                "phone"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "phone"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(phone)"
+            }
+        }, 
+        {
+            "turn-index": 5, 
+            "goal-labels": {
+                "food": "international", 
+                "pricerange": "cheap", 
+                "area": "dontcare"
+            }, 
+            "transcription": "thank you good bye", 
+            "method-label": "finished", 
+            "audio-file": "pt344x_0004102_0004201.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "thankyou"
+                    }, 
+                    {
+                        "slots": [], 
+                        "act": "bye"
+                    }
+                ], 
+                "cam": "thankyou()|bye()"
+            }
+        }
+    ], 
+    "task-information": {
+        "goal": {
+            "text": "Task 05496: You want to find a restaurant in any area and it should serve international food. Make sure you get the address and phone number of the venue.", 
+            "request-slots": [
+                "addr", 
+                "phone"
+            ], 
+            "constraints": [
+                [
+                    "food", 
+                    "international"
+                ], 
+                [
+                    "area", 
+                    "dontcare"
+                ]
+            ]
+        }, 
+        "feedback": {
+            "questionnaire": [
+                [
+                    "The system understood me well.", 
+                    "strongly agree"
+                ]
+            ], 
+            "comments": null, 
+            "success": true
+        }
+    }, 
+    "session-id": "voip-1b51204ef5-20130401_145742"
+}

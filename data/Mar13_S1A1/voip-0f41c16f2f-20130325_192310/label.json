@@ -1,0 +1,175 @@
+{
+    "caller-id": "0f41c16f2f", 
+    "turns": [
+        {
+            "turn-index": 0, 
+            "goal-labels": {
+                "food": "german"
+            }, 
+            "transcription": "im looking for a restaurant that serves german food", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0000984_0001265.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "german"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(food=german,type=restaurant,task=find)"
+            }
+        }, 
+        {
+            "turn-index": 1, 
+            "goal-labels": {
+                "food": "german"
+            }, 
+            "transcription": "yea", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0001794_0001819.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "affirm"
+                    }
+                ], 
+                "cam": "affirm()"
+            }
+        }, 
+        {
+            "turn-index": 2, 
+            "goal-labels": {
+                "food": "german", 
+                "pricerange": "moderate"
+            }, 
+            "transcription": "yes", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0003486_0003542.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "affirm"
+                    }
+                ], 
+                "cam": "affirm()"
+            }
+        }, 
+        {
+            "turn-index": 3, 
+            "goal-labels": {
+                "food": "french", 
+                "pricerange": "moderate"
+            }, 
+            "transcription": "how about french food", 
+            "method-label": "byalternatives", 
+            "audio-file": "pt344x_0004353_0004440.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "reqalts"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "french"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "reqalts(food=french)"
+            }
+        }, 
+        {
+            "turn-index": 4, 
+            "goal-labels": {
+                "food": "french", 
+                "pricerange": "moderate"
+            }, 
+            "transcription": "a restaurant serving french food", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0005120_0005313.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "french"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(type=restaurant,food=french)"
+            }
+        }, 
+        {
+            "turn-index": 5, 
+            "goal-labels": {
+                "food": "french", 
+                "pricerange": "moderate"
+            }, 
+            "transcription": "thank you good bye", 
+            "method-label": "finished", 
+            "audio-file": "pt344x_0005936_0006062.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "thankyou"
+                    }, 
+                    {
+                        "slots": [], 
+                        "act": "bye"
+                    }
+                ], 
+                "cam": "thankyou()|bye()"
+            }
+        }
+    ], 
+    "task-information": {
+        "goal": {
+            "text": "Task 09207: You are looking for a restaurant in any area and it should serve german food. If there is no such venue how about french type of food. Make sure you get the phone number.", 
+            "request-slots": [
+                "phone"
+            ], 
+            "constraints": [
+                [
+                    "food", 
+                    "french"
+                ], 
+                [
+                    "area", 
+                    "dontcare"
+                ]
+            ]
+        }, 
+        "feedback": {
+            "questionnaire": [
+                [
+                    "The system understood me well.", 
+                    "slightly agree"
+                ]
+            ], 
+            "comments": null, 
+            "success": false
+        }
+    }, 
+    "session-id": "voip-0f41c16f2f-20130325_192310"
+}

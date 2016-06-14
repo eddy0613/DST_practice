@@ -1,0 +1,179 @@
+{
+    "caller-id": "1b51204ef5", 
+    "turns": [
+        {
+            "turn-index": 0, 
+            "goal-labels": {
+                "food": "indian"
+            }, 
+            "transcription": "indian food", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0000979_0001075.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "indian"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(food=indian)"
+            }
+        }, 
+        {
+            "turn-index": 1, 
+            "goal-labels": {
+                "food": "indian", 
+                "area": "south"
+            }, 
+            "transcription": "south town", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0001515_0001638.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "area", 
+                                "south"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(area=south)"
+            }
+        }, 
+        {
+            "turn-index": 2, 
+            "goal-labels": {
+                "food": "indian", 
+                "area": "south"
+            }, 
+            "transcription": "indian", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0001998_0002063.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "indian"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(food=indian)"
+            }
+        }, 
+        {
+            "turn-index": 3, 
+            "goal-labels": {
+                "food": "indian", 
+                "area": "south"
+            }, 
+            "transcription": "anything else", 
+            "method-label": "byalternatives", 
+            "audio-file": "pt344x_0002842_0002921.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "reqalts"
+                    }
+                ], 
+                "cam": "reqalts()"
+            }
+        }, 
+        {
+            "turn-index": 4, 
+            "goal-labels": {
+                "food": "indian", 
+                "area": "south"
+            }, 
+            "transcription": "what is the address", 
+            "method-label": "byalternatives", 
+            "audio-file": "pt344x_0003509_0003615.wav", 
+            "requested-slots": [
+                "addr"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "addr"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(addr)"
+            }
+        }, 
+        {
+            "turn-index": 5, 
+            "goal-labels": {
+                "food": "indian", 
+                "area": "south"
+            }, 
+            "transcription": "thank you good bye", 
+            "method-label": "finished", 
+            "audio-file": "pt344x_0004319_0004436.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "thankyou"
+                    }, 
+                    {
+                        "slots": [], 
+                        "act": "bye"
+                    }
+                ], 
+                "cam": "thankyou()|bye()"
+            }
+        }
+    ], 
+    "task-information": {
+        "goal": {
+            "text": "Task 08895: You want to find a moderately priced restaurant and it should serve indian food. Don't go for the first venue the system offers you, ask if there is anything else. Make sure you get the address.", 
+            "request-slots": [
+                "addr"
+            ], 
+            "constraints": [
+                [
+                    "food", 
+                    "indian"
+                ], 
+                [
+                    "pricerange", 
+                    "moderate"
+                ]
+            ]
+        }, 
+        "feedback": {
+            "questionnaire": [
+                [
+                    "The system understood me well.", 
+                    "agree"
+                ]
+            ], 
+            "comments": null, 
+            "success": true
+        }
+    }, 
+    "session-id": "voip-1b51204ef5-20130401_173145"
+}

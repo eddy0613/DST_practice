@@ -1,0 +1,237 @@
+{
+    "caller-id": "03d6592b76", 
+    "turns": [
+        {
+            "turn-index": 0, 
+            "goal-labels": {
+                "food": "halal", 
+                "pricerange": "moderate"
+            }, 
+            "transcription": "id like a moderately priced restaurant that serves halal food", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0000962_0001301.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "halal"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "pricerange", 
+                                "moderate"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(pricerange=moderate,type=restaurant,food=halal)"
+            }
+        }, 
+        {
+            "turn-index": 1, 
+            "goal-labels": {
+                "food": "gastropub", 
+                "pricerange": "moderate"
+            }, 
+            "transcription": "how about gastropub", 
+            "method-label": "byalternatives", 
+            "audio-file": "pt344x_0001849_0001985.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "reqalts"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "gastropub"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "reqalts(food=gastropub)"
+            }
+        }, 
+        {
+            "turn-index": 2, 
+            "goal-labels": {
+                "food": "gastropub", 
+                "pricerange": "moderate"
+            }, 
+            "transcription": "does it serve gastropub", 
+            "method-label": "byalternatives", 
+            "audio-file": "pt344x_0002564_0002734.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "gastropub"
+                            ]
+                        ], 
+                        "act": "confirm"
+                    }
+                ], 
+                "cam": "confirm(food=gastropub)"
+            }
+        }, 
+        {
+            "turn-index": 3, 
+            "goal-labels": {
+                "food": "gastropub", 
+                "pricerange": "moderate"
+            }, 
+            "transcription": "id like a restaurant that serves gastropub food", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0003326_0003603.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "gastropub"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(type=restaurant,food=gastropub)"
+            }
+        }, 
+        {
+            "turn-index": 4, 
+            "goal-labels": {
+                "food": "gastropub", 
+                "pricerange": "moderate"
+            }, 
+            "transcription": "what is what area is it in", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0004315_0004503.wav", 
+            "requested-slots": [
+                "area"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "area"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(area)"
+            }
+        }, 
+        {
+            "turn-index": 5, 
+            "goal-labels": {
+                "food": "gastropub", 
+                "pricerange": "moderate"
+            }, 
+            "transcription": "what is the address and phone number", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0005090_0005273.wav", 
+            "requested-slots": [
+                "phone", 
+                "addr"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "addr"
+                            ]
+                        ], 
+                        "act": "request"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "phone"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(addr,phone)"
+            }
+        }, 
+        {
+            "turn-index": 6, 
+            "goal-labels": {
+                "food": "gastropub", 
+                "pricerange": "moderate"
+            }, 
+            "transcription": "thank you good bye", 
+            "method-label": "finished", 
+            "audio-file": "pt344x_0006344_0006437.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "thankyou"
+                    }, 
+                    {
+                        "slots": [], 
+                        "act": "bye"
+                    }
+                ], 
+                "cam": "thankyou()|bye()"
+            }
+        }
+    ], 
+    "task-information": {
+        "goal": {
+            "text": "Task 02232: You want to find a moderately priced restaurant and it should serve halal food. If there is no such venue how about gastropub type of food. Make sure you get the address, phone number, and area of the venue.", 
+            "request-slots": [
+                "addr", 
+                "phone", 
+                "area"
+            ], 
+            "constraints": [
+                [
+                    "food", 
+                    "gastropub"
+                ], 
+                [
+                    "pricerange", 
+                    "moderate"
+                ]
+            ]
+        }, 
+        "feedback": {
+            "questionnaire": [
+                [
+                    "The system understood me well.", 
+                    "strongly agree"
+                ]
+            ], 
+            "comments": null, 
+            "success": true
+        }
+    }, 
+    "session-id": "voip-03d6592b76-20130326_014855"
+}

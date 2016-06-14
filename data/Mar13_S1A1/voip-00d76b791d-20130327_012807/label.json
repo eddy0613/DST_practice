@@ -1,0 +1,220 @@
+{
+    "caller-id": "00d76b791d", 
+    "turns": [
+        {
+            "turn-index": 0, 
+            "goal-labels": {
+                "food": "venetian", 
+                "pricerange": "moderate"
+            }, 
+            "transcription": "moderately priced vanessa restaurant", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0001055_0001271.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "venetian"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "pricerange", 
+                                "moderate"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(pricerange=moderate,type=restaurant,food=venetian)"
+            }
+        }, 
+        {
+            "turn-index": 1, 
+            "goal-labels": {
+                "food": "gastropub", 
+                "pricerange": "moderate"
+            }, 
+            "transcription": "gastropub", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0001893_0001972.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "gastropub"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(food=gastropub)"
+            }
+        }, 
+        {
+            "turn-index": 2, 
+            "goal-labels": {
+                "food": "gastropub", 
+                "pricerange": "moderate"
+            }, 
+            "transcription": "right", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002426_0002447.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "affirm"
+                    }
+                ], 
+                "cam": "affirm()"
+            }
+        }, 
+        {
+            "turn-index": 3, 
+            "goal-labels": {
+                "food": "gastropub", 
+                "pricerange": "moderate"
+            }, 
+            "transcription": "address", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0003157_0003212.wav", 
+            "requested-slots": [
+                "addr"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "addr"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(addr)"
+            }
+        }, 
+        {
+            "turn-index": 4, 
+            "goal-labels": {
+                "food": "gastropub", 
+                "pricerange": "moderate"
+            }, 
+            "transcription": "phone number", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0003869_0003925.wav", 
+            "requested-slots": [
+                "phone"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "phone"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(phone)"
+            }
+        }, 
+        {
+            "turn-index": 5, 
+            "goal-labels": {
+                "food": "gastropub", 
+                "pricerange": "moderate"
+            }, 
+            "transcription": "what area is it in", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0004842_0004972.wav", 
+            "requested-slots": [
+                "area"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "area"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(area)"
+            }
+        }, 
+        {
+            "turn-index": 6, 
+            "goal-labels": {
+                "food": "gastropub", 
+                "pricerange": "moderate"
+            }, 
+            "transcription": "thank you good bye", 
+            "method-label": "finished", 
+            "audio-file": "pt344x_0005606_0005682.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "thankyou"
+                    }, 
+                    {
+                        "slots": [], 
+                        "act": "bye"
+                    }
+                ], 
+                "cam": "thankyou()|bye()"
+            }
+        }
+    ], 
+    "task-information": {
+        "goal": {
+            "text": "Task 12414: You want to find a moderately priced restaurant and it should serve venetian food. If there is no such venue how about gastropub type of food. Make sure you get the address, phone number, and area of the venue.", 
+            "request-slots": [
+                "addr", 
+                "phone", 
+                "area"
+            ], 
+            "constraints": [
+                [
+                    "food", 
+                    "gastropub"
+                ], 
+                [
+                    "pricerange", 
+                    "moderate"
+                ]
+            ]
+        }, 
+        "feedback": {
+            "questionnaire": [
+                [
+                    "The system understood me well.", 
+                    "agree"
+                ]
+            ], 
+            "comments": null, 
+            "success": true
+        }
+    }, 
+    "session-id": "voip-00d76b791d-20130327_012807"
+}

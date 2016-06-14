@@ -1,0 +1,257 @@
+{
+    "caller-id": "0abf414c0c", 
+    "turns": [
+        {
+            "turn-index": 0, 
+            "goal-labels": {
+                "pricerange": "moderate"
+            }, 
+            "transcription": "moderately", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0001101_0001223.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "pricerange", 
+                                "moderate"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(pricerange=moderate)"
+            }
+        }, 
+        {
+            "turn-index": 1, 
+            "goal-labels": {
+                "pricerange": "moderate", 
+                "area": "west"
+            }, 
+            "transcription": "west", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0001619_0001757.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "area", 
+                                "west"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(area=west)"
+            }
+        }, 
+        {
+            "turn-index": 2, 
+            "goal-labels": {
+                "pricerange": "moderate", 
+                "area": "west"
+            }, 
+            "transcription": "west", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002126_0002213.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "area", 
+                                "west"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(area=west)"
+            }
+        }, 
+        {
+            "turn-index": 3, 
+            "goal-labels": {
+                "pricerange": "moderate", 
+                "area": "west"
+            }, 
+            "transcription": "west part of town", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002564_0002707.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "area", 
+                                "west"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(area=west)"
+            }
+        }, 
+        {
+            "turn-index": 4, 
+            "goal-labels": {
+                "food": "dontcare", 
+                "pricerange": "moderate", 
+                "area": "west"
+            }, 
+            "transcription": "doesnt matter", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0003210_0003293.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "this", 
+                                "dontcare"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(=dontcare)"
+            }
+        }, 
+        {
+            "turn-index": 5, 
+            "goal-labels": {
+                "food": "dontcare", 
+                "pricerange": "moderate", 
+                "area": "west"
+            }, 
+            "transcription": "what is the", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0004125_0004240.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [], 
+                "cam": "null()"
+            }
+        }, 
+        {
+            "turn-index": 6, 
+            "goal-labels": {
+                "food": "dontcare", 
+                "pricerange": "moderate", 
+                "area": "west"
+            }, 
+            "transcription": "what is the address", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0004728_0004808.wav", 
+            "requested-slots": [
+                "addr"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "addr"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(addr)"
+            }
+        }, 
+        {
+            "turn-index": 7, 
+            "goal-labels": {
+                "food": "dontcare", 
+                "pricerange": "moderate", 
+                "area": "west"
+            }, 
+            "transcription": "what is the phone number", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0005659_0005776.wav", 
+            "requested-slots": [
+                "phone"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "phone"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(phone)"
+            }
+        }, 
+        {
+            "turn-index": 8, 
+            "goal-labels": {
+                "food": "dontcare", 
+                "pricerange": "moderate", 
+                "area": "west"
+            }, 
+            "transcription": "thank you good bye", 
+            "method-label": "finished", 
+            "audio-file": "pt344x_0006624_0006736.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "thankyou"
+                    }, 
+                    {
+                        "slots": [], 
+                        "act": "bye"
+                    }
+                ], 
+                "cam": "thankyou()|bye()"
+            }
+        }
+    ], 
+    "task-information": {
+        "goal": {
+            "text": "Task 08187: You are looking for a moderately priced restaurant and it should be in the west part of town. Make sure you get the address and phone number.", 
+            "request-slots": [
+                "addr", 
+                "phone"
+            ], 
+            "constraints": [
+                [
+                    "pricerange", 
+                    "moderate"
+                ], 
+                [
+                    "area", 
+                    "west"
+                ]
+            ]
+        }, 
+        "feedback": {
+            "questionnaire": [
+                [
+                    "The system understood me well.", 
+                    "strongly disagree"
+                ]
+            ], 
+            "comments": "Prezzo is a moderately price restaurant. The address is 2124 North Hampton Road. ", 
+            "success": true
+        }
+    }, 
+    "session-id": "voip-0abf414c0c-20130326_235444"
+}

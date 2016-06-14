@@ -1,0 +1,147 @@
+{
+    "caller-id": "2c217000af", 
+    "turns": [
+        {
+            "turn-index": 0, 
+            "goal-labels": {
+                "pricerange": "cheap", 
+                "area": "south"
+            }, 
+            "transcription": "can i have a cheap restaurant in the south part of town", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0000955_0001223.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "pricerange", 
+                                "cheap"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "area", 
+                                "south"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(pricerange=cheap,type=restaurant,area=south)"
+            }
+        }, 
+        {
+            "turn-index": 1, 
+            "goal-labels": {
+                "food": "dontcare", 
+                "pricerange": "cheap", 
+                "area": "south"
+            }, 
+            "transcription": "any kind of food", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0001640_0001728.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "dontcare"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(food=dontcare)"
+            }
+        }, 
+        {
+            "turn-index": 2, 
+            "goal-labels": {
+                "food": "dontcare", 
+                "pricerange": "cheap", 
+                "area": "south"
+            }, 
+            "transcription": "what is the address", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002474_0002560.wav", 
+            "requested-slots": [
+                "addr"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "addr"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(addr)"
+            }
+        }, 
+        {
+            "turn-index": 3, 
+            "goal-labels": {
+                "food": "dontcare", 
+                "pricerange": "cheap", 
+                "area": "south"
+            }, 
+            "transcription": "thank you good bye", 
+            "method-label": "finished", 
+            "audio-file": "pt344x_0003260_0003375.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "thankyou"
+                    }, 
+                    {
+                        "slots": [], 
+                        "act": "bye"
+                    }
+                ], 
+                "cam": "thankyou()|bye()"
+            }
+        }
+    ], 
+    "task-information": {
+        "goal": {
+            "text": "Task 04479: You are looking for a cheap restaurant and it should be in the south part of town. You want to know the address.", 
+            "request-slots": [
+                "addr"
+            ], 
+            "constraints": [
+                [
+                    "pricerange", 
+                    "cheap"
+                ], 
+                [
+                    "area", 
+                    "south"
+                ]
+            ]
+        }, 
+        "feedback": {
+            "questionnaire": [
+                [
+                    "The system understood me well.", 
+                    "strongly agree"
+                ]
+            ], 
+            "comments": null, 
+            "success": true
+        }
+    }, 
+    "session-id": "voip-2c217000af-20130328_223711"
+}

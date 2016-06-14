@@ -1,0 +1,310 @@
+{
+    "caller-id": "10beae627f", 
+    "turns": [
+        {
+            "turn-index": 0, 
+            "goal-labels": {}, 
+            "transcription": "unintelligible", 
+            "method-label": "none", 
+            "audio-file": "pt344x_0000340_0000396.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [], 
+                "cam": "null()"
+            }
+        }, 
+        {
+            "turn-index": 1, 
+            "goal-labels": {}, 
+            "transcription": "unintelligible", 
+            "method-label": "none", 
+            "audio-file": "pt344x_0000493_0000548.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [], 
+                "cam": "null()"
+            }
+        }, 
+        {
+            "turn-index": 2, 
+            "goal-labels": {}, 
+            "transcription": "unintelligible", 
+            "method-label": "none", 
+            "audio-file": "pt344x_0000649_0000700.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [], 
+                "cam": "null()"
+            }
+        }, 
+        {
+            "turn-index": 3, 
+            "goal-labels": {}, 
+            "transcription": "im looking for venison food cross talk", 
+            "method-label": "none", 
+            "audio-file": "pt344x_0001070_0001482.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [], 
+                "cam": "inform(type=restaurant,task=find)"
+            }
+        }, 
+        {
+            "turn-index": 4, 
+            "goal-labels": {
+                "food": "gastropub"
+            }, 
+            "transcription": "cross talk how about gastro pub", 
+            "method-label": "byalternatives", 
+            "audio-file": "pt344x_0001963_0002391.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "reqalts"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "gastropub"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "reqalts(type=restaurant,food=gastropub)"
+            }
+        }, 
+        {
+            "turn-index": 5, 
+            "goal-labels": {
+                "food": "venetian"
+            }, 
+            "transcription": "yes", 
+            "method-label": "byalternatives", 
+            "audio-file": "pt344x_0002823_0002921.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "affirm"
+                    }
+                ], 
+                "cam": "affirm()"
+            }
+        }, 
+        {
+            "turn-index": 6, 
+            "goal-labels": {
+                "food": "gastropub"
+            }, 
+            "transcription": "how about gastro pub", 
+            "method-label": "byalternatives", 
+            "audio-file": "pt344x_0003485_0003644.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "reqalts"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "gastropub"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "reqalts(food=\"gastropub\")"
+            }
+        }, 
+        {
+            "turn-index": 7, 
+            "goal-labels": {
+                "food": "gastropub"
+            }, 
+            "transcription": "how about gastro pub type of food", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0004182_0004378.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "gastropub"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(food=\"gastropub\")"
+            }
+        }, 
+        {
+            "turn-index": 8, 
+            "goal-labels": {
+                "food": "gastropub"
+            }, 
+            "transcription": "whats the address", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0004978_0005056.wav", 
+            "requested-slots": [
+                "addr"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "addr"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(addr)"
+            }
+        }, 
+        {
+            "turn-index": 9, 
+            "goal-labels": {
+                "food": "gastropub"
+            }, 
+            "transcription": "and the phone number", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0005645_0005745.wav", 
+            "requested-slots": [
+                "phone"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "phone"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(phone)"
+            }
+        }, 
+        {
+            "turn-index": 10, 
+            "goal-labels": {
+                "food": "gastropub"
+            }, 
+            "transcription": "and the post code", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0006522_0006865.wav", 
+            "requested-slots": [
+                "postcode"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "postcode"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(postcode)"
+            }
+        }, 
+        {
+            "turn-index": 11, 
+            "goal-labels": {
+                "food": "gastropub"
+            }, 
+            "transcription": "what type of food is this", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0007479_0007604.wav", 
+            "requested-slots": [
+                "food"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "food"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(food)"
+            }
+        }, 
+        {
+            "turn-index": 12, 
+            "goal-labels": {
+                "food": "gastropub"
+            }, 
+            "transcription": "thank you good bye", 
+            "method-label": "finished", 
+            "audio-file": "pt344x_0008032_0008278.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "thankyou"
+                    }, 
+                    {
+                        "slots": [], 
+                        "act": "bye"
+                    }
+                ], 
+                "cam": "thankyou()|bye()"
+            }
+        }
+    ], 
+    "task-information": {
+        "goal": {
+            "text": "Task 10104: You are looking for and it should serve venetian food. You don't care about the price range. If there is no such venue how about gastropub type of food. Make sure you get the address, phone number, and postcode.", 
+            "request-slots": [
+                "addr", 
+                "phone", 
+                "postcode"
+            ], 
+            "constraints": [
+                [
+                    "food", 
+                    "gastropub"
+                ], 
+                [
+                    "pricerange", 
+                    "dontcare"
+                ]
+            ]
+        }, 
+        "feedback": {
+            "questionnaire": [
+                [
+                    "The system understood me well.", 
+                    "agree"
+                ]
+            ], 
+            "comments": null, 
+            "success": true
+        }
+    }, 
+    "session-id": "voip-10beae627f-20130401_164954"
+}

@@ -1,0 +1,159 @@
+{
+    "caller-id": "0f41c16f2f", 
+    "turns": [
+        {
+            "turn-index": 0, 
+            "goal-labels": {
+                "food": "persian"
+            }, 
+            "transcription": "persian food", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0000999_0001123.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "persian"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(food=persian)"
+            }
+        }, 
+        {
+            "turn-index": 1, 
+            "goal-labels": {
+                "food": "indian"
+            }, 
+            "transcription": "indian food", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0001762_0001877.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "indian"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(food=indian)"
+            }
+        }, 
+        {
+            "turn-index": 2, 
+            "goal-labels": {
+                "food": "indian", 
+                "area": "east"
+            }, 
+            "transcription": "east", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002322_0002364.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "area", 
+                                "east"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(area=east)"
+            }
+        }, 
+        {
+            "turn-index": 3, 
+            "goal-labels": {
+                "food": "indian", 
+                "pricerange": "cheap", 
+                "area": "east"
+            }, 
+            "transcription": "cheap", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002969_0003003.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "pricerange", 
+                                "cheap"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(pricerange=cheap)"
+            }
+        }, 
+        {
+            "turn-index": 4, 
+            "goal-labels": {
+                "food": "indian", 
+                "pricerange": "cheap", 
+                "area": "east"
+            }, 
+            "transcription": "thank you good bye", 
+            "method-label": "finished", 
+            "audio-file": "pt344x_0003761_0003889.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "thankyou"
+                    }, 
+                    {
+                        "slots": [], 
+                        "act": "bye"
+                    }
+                ], 
+                "cam": "thankyou()|bye()"
+            }
+        }
+    ], 
+    "task-information": {
+        "goal": {
+            "text": "Task 06552: You are looking for a restaurant in the east part of town and it should serve persian food. If there is no such venue how about indian type of food. You want to know the address and phone number of the venue.", 
+            "request-slots": [
+                "addr", 
+                "phone"
+            ], 
+            "constraints": [
+                [
+                    "food", 
+                    "indian"
+                ], 
+                [
+                    "area", 
+                    "east"
+                ]
+            ]
+        }, 
+        "feedback": {
+            "questionnaire": [
+                [
+                    "The system understood me well.", 
+                    "strongly agree"
+                ]
+            ], 
+            "comments": null, 
+            "success": false
+        }
+    }, 
+    "session-id": "voip-0f41c16f2f-20130325_204340"
+}

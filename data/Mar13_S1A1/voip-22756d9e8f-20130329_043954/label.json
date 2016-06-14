@@ -1,0 +1,197 @@
+{
+    "caller-id": "22756d9e8f", 
+    "turns": [
+        {
+            "turn-index": 0, 
+            "goal-labels": {
+                "pricerange": "cheap", 
+                "area": "south"
+            }, 
+            "transcription": "i want to find a cheap restaurant in the south part of town", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0000924_0001290.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "pricerange", 
+                                "cheap"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "area", 
+                                "south"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(pricerange=cheap,type=restaurant,area=south)"
+            }
+        }, 
+        {
+            "turn-index": 1, 
+            "goal-labels": {
+                "food": "dontcare", 
+                "pricerange": "cheap", 
+                "area": "south"
+            }, 
+            "transcription": "it doesnt matter", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0001674_0001771.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "this", 
+                                "dontcare"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(=dontcare)"
+            }
+        }, 
+        {
+            "turn-index": 2, 
+            "goal-labels": {
+                "food": "dontcare", 
+                "pricerange": "cheap", 
+                "area": "south"
+            }, 
+            "transcription": "may i have the address phone number and post code", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002341_0002719.wav", 
+            "requested-slots": [
+                "phone", 
+                "addr", 
+                "postcode"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "addr"
+                            ]
+                        ], 
+                        "act": "request"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "phone"
+                            ]
+                        ], 
+                        "act": "request"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "postcode"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(addr,phone,postcode)"
+            }
+        }, 
+        {
+            "turn-index": 3, 
+            "goal-labels": {
+                "food": "dontcare", 
+                "pricerange": "cheap", 
+                "area": "south"
+            }, 
+            "transcription": "and may i have the post code", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0003823_0003984.wav", 
+            "requested-slots": [
+                "postcode"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "postcode"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(postcode)"
+            }
+        }, 
+        {
+            "turn-index": 4, 
+            "goal-labels": {
+                "food": "dontcare", 
+                "pricerange": "cheap", 
+                "area": "south"
+            }, 
+            "transcription": "thank you good bye", 
+            "method-label": "finished", 
+            "audio-file": "pt344x_0004592_0004768.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "thankyou"
+                    }, 
+                    {
+                        "slots": [], 
+                        "act": "bye"
+                    }
+                ], 
+                "cam": "thankyou()|bye()"
+            }
+        }
+    ], 
+    "task-information": {
+        "goal": {
+            "text": "Task 11019: You want to find a cheap restaurant and it should be in the south part of town. Make sure you get the address, phone number, and postcode of the venue.", 
+            "request-slots": [
+                "addr", 
+                "phone", 
+                "postcode"
+            ], 
+            "constraints": [
+                [
+                    "pricerange", 
+                    "cheap"
+                ], 
+                [
+                    "area", 
+                    "south"
+                ]
+            ]
+        }, 
+        "feedback": {
+            "questionnaire": [
+                [
+                    "The system understood me well.", 
+                    "agree"
+                ]
+            ], 
+            "comments": null, 
+            "success": true
+        }
+    }, 
+    "session-id": "voip-22756d9e8f-20130329_043954"
+}

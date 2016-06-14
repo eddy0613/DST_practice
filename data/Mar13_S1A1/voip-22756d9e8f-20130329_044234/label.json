@@ -1,0 +1,203 @@
+{
+    "caller-id": "22756d9e8f", 
+    "turns": [
+        {
+            "turn-index": 0, 
+            "goal-labels": {
+                "area": "south"
+            }, 
+            "transcription": "i want to find a restaurant in the south part of town", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0000931_0001298.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "area", 
+                                "south"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(type=restaurant,area=south)"
+            }
+        }, 
+        {
+            "turn-index": 1, 
+            "goal-labels": {
+                "food": "polynesian", 
+                "area": "south"
+            }, 
+            "transcription": "polynesian food", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0001694_0001833.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "polynesian"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(food=polynesian)"
+            }
+        }, 
+        {
+            "turn-index": 2, 
+            "goal-labels": {
+                "food": "portuguese", 
+                "area": "south"
+            }, 
+            "transcription": "how about portuguese", 
+            "method-label": "byalternatives", 
+            "audio-file": "pt344x_0002438_0002574.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "reqalts"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "portuguese"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "reqalts(food=portuguese)"
+            }
+        }, 
+        {
+            "turn-index": 3, 
+            "goal-labels": {
+                "food": "portuguese", 
+                "area": "south"
+            }, 
+            "transcription": "how about portuguese food", 
+            "method-label": "byalternatives", 
+            "audio-file": "pt344x_0003145_0003356.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "reqalts"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "portuguese"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "reqalts(food=portuguese)"
+            }
+        }, 
+        {
+            "turn-index": 4, 
+            "goal-labels": {
+                "food": "portuguese", 
+                "area": "south"
+            }, 
+            "transcription": "may i have the phone number and address", 
+            "method-label": "byalternatives", 
+            "audio-file": "pt344x_0004018_0004243.wav", 
+            "requested-slots": [
+                "phone", 
+                "addr"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "phone"
+                            ]
+                        ], 
+                        "act": "request"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "addr"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(phone,addr)"
+            }
+        }, 
+        {
+            "turn-index": 5, 
+            "goal-labels": {
+                "food": "portuguese", 
+                "area": "south"
+            }, 
+            "transcription": "thank you good bye", 
+            "method-label": "finished", 
+            "audio-file": "pt344x_0005058_0005152.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "thankyou"
+                    }, 
+                    {
+                        "slots": [], 
+                        "act": "bye"
+                    }
+                ], 
+                "cam": "thankyou()|bye()"
+            }
+        }
+    ], 
+    "task-information": {
+        "goal": {
+            "text": "Task 02904: You want to find a restaurant in the south part of town and it should serve polynesian food. If there is no such venue how about portuguese type of food. Make sure you get the phone number and address.", 
+            "request-slots": [
+                "phone", 
+                "addr"
+            ], 
+            "constraints": [
+                [
+                    "food", 
+                    "portuguese"
+                ], 
+                [
+                    "area", 
+                    "south"
+                ]
+            ]
+        }, 
+        "feedback": {
+            "questionnaire": [
+                [
+                    "The system understood me well.", 
+                    "agree"
+                ]
+            ], 
+            "comments": null, 
+            "success": true
+        }
+    }, 
+    "session-id": "voip-22756d9e8f-20130329_044234"
+}

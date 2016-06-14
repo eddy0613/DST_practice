@@ -1,0 +1,3922 @@
+{
+    "session-id": "voip-0a45bc863d-20130325_200034", 
+    "session-date": "2013-03-25", 
+    "session-time": "20:00:34", 
+    "caller-id": "0a45bc863d", 
+    "turns": [
+        {
+            "output": {
+                "transcript": "Hello , welcome to the Cambridge restaurant system? You can ask for restaurants by area , price range or food type . How may I help you?", 
+                "end-time": 9.04, 
+                "start-time": 0.001241, 
+                "dialog-acts": [
+                    {
+                        "slots": [], 
+                        "act": "welcomemsg"
+                    }
+                ], 
+                "aborted": false
+            }, 
+            "turn-index": 0, 
+            "input": {
+                "live": {
+                    "asr-hyps": [
+                        {
+                            "asr-hyp": "uh english food centre part of town", 
+                            "score": -1.309183
+                        }, 
+                        {
+                            "asr-hyp": "a english food centre part of town", 
+                            "score": -1.589453
+                        }, 
+                        {
+                            "asr-hyp": "uh english food part of town", 
+                            "score": -2.68961
+                        }, 
+                        {
+                            "asr-hyp": "uh english food centre centre part of town", 
+                            "score": -2.690191
+                        }, 
+                        {
+                            "asr-hyp": "a english food part of town", 
+                            "score": -2.96988
+                        }, 
+                        {
+                            "asr-hyp": "a english food centre centre part of town", 
+                            "score": -2.970461
+                        }, 
+                        {
+                            "asr-hyp": "uh english foods centre part of town", 
+                            "score": -3.225025
+                        }, 
+                        {
+                            "asr-hyp": "a english foods centre part of town", 
+                            "score": -3.505295
+                        }, 
+                        {
+                            "asr-hyp": "uh english food the centre part of town", 
+                            "score": -4.136323
+                        }, 
+                        {
+                            "asr-hyp": "ah english food centre part of town", 
+                            "score": -4.354459
+                        }
+                    ], 
+                    "slu-hyps": [
+                        {
+                            "slu-hyp": [
+                                {
+                                    "slots": [
+                                        [
+                                            "food", 
+                                            "english"
+                                        ]
+                                    ], 
+                                    "act": "inform"
+                                }, 
+                                {
+                                    "slots": [
+                                        [
+                                            "area", 
+                                            "centre"
+                                        ]
+                                    ], 
+                                    "act": "inform"
+                                }
+                            ], 
+                            "score": 0.6911507512637285
+                        }, 
+                        {
+                            "slu-hyp": [
+                                {
+                                    "slots": [
+                                        [
+                                            "food", 
+                                            "english"
+                                        ]
+                                    ], 
+                                    "act": "inform"
+                                }
+                            ], 
+                            "score": 0.24538722032471438
+                        }, 
+                        {
+                            "slu-hyp": [
+                                {
+                                    "slots": [], 
+                                    "act": "hello"
+                                }, 
+                                {
+                                    "slots": [
+                                        [
+                                            "food", 
+                                            "english"
+                                        ]
+                                    ], 
+                                    "act": "inform"
+                                }, 
+                                {
+                                    "slots": [
+                                        [
+                                            "area", 
+                                            "centre"
+                                        ]
+                                    ], 
+                                    "act": "inform"
+                                }
+                            ], 
+                            "score": 0.02892018209896692
+                        }, 
+                        {
+                            "slu-hyp": [
+                                {
+                                    "slots": [
+                                        [
+                                            "area", 
+                                            "centre"
+                                        ]
+                                    ], 
+                                    "act": "inform"
+                                }
+                            ], 
+                            "score": 0.024273980922411276
+                        }, 
+                        {
+                            "slu-hyp": [
+                                {
+                                    "slots": [], 
+                                    "act": "hello"
+                                }, 
+                                {
+                                    "slots": [
+                                        [
+                                            "food", 
+                                            "english"
+                                        ]
+                                    ], 
+                                    "act": "inform"
+                                }
+                            ], 
+                            "score": 0.010267865390178885
+                        }
+                    ]
+                }, 
+                "end-time": 12.14, 
+                "start-time": 9.04, 
+                "batch": {
+                    "cnet": [
+                        {
+                            "start": 0.0, 
+                            "end": 0.745, 
+                            "arcs": [
+                                {
+                                    "score": -0.0001, 
+                                    "word": "<s>"
+                                }, 
+                                {
+                                    "score": -24.57813, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 0.745, 
+                            "end": 1.1175, 
+                            "arcs": [
+                                {
+                                    "score": -25.48722, 
+                                    "word": "could"
+                                }, 
+                                {
+                                    "score": -42.34565, 
+                                    "word": "can"
+                                }, 
+                                {
+                                    "score": -40.63339, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.1175, 
+                            "end": 1.210625, 
+                            "arcs": [
+                                {
+                                    "score": -17.66155, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -25.13034, 
+                                    "word": "can"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.210625, 
+                            "end": 1.30375, 
+                            "arcs": [
+                                {
+                                    "score": -30.86339, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -22.59483, 
+                                    "word": "is"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.30375, 
+                            "end": 1.396875, 
+                            "arcs": [
+                                {
+                                    "score": -22.4563, 
+                                    "word": "a"
+                                }, 
+                                {
+                                    "score": -25.12601, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -28.81301, 
+                                    "word": "can"
+                                }, 
+                                {
+                                    "score": -31.29021, 
+                                    "word": "do"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.396875, 
+                            "end": 1.4434375, 
+                            "arcs": [
+                                {
+                                    "score": -22.14027, 
+                                    "word": "it"
+                                }, 
+                                {
+                                    "score": -22.36435, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -18.44345, 
+                                    "word": "and"
+                                }, 
+                                {
+                                    "score": -21.55435, 
+                                    "word": "is"
+                                }, 
+                                {
+                                    "score": -29.04979, 
+                                    "word": "do"
+                                }, 
+                                {
+                                    "score": -15.63822, 
+                                    "word": "can"
+                                }, 
+                                {
+                                    "score": -17.18385, 
+                                    "word": "could"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.4434375, 
+                            "end": 1.49, 
+                            "arcs": [
+                                {
+                                    "score": -24.05517, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.49, 
+                            "end": 1.6675, 
+                            "arcs": [
+                                {
+                                    "score": -0.0001, 
+                                    "word": "english"
+                                }, 
+                                {
+                                    "score": -15.91122, 
+                                    "word": "in"
+                                }, 
+                                {
+                                    "score": -10.88833, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -19.76419, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.6675, 
+                            "end": 1.845, 
+                            "arcs": [
+                                {
+                                    "score": -38.82317, 
+                                    "word": "english"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.845, 
+                            "end": 2.2, 
+                            "arcs": [
+                                {
+                                    "score": -10.88176, 
+                                    "word": "english"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 2.2, 
+                            "end": 2.231875, 
+                            "arcs": [
+                                {
+                                    "score": -0.2310433, 
+                                    "word": "food"
+                                }, 
+                                {
+                                    "score": -1.702585, 
+                                    "word": "to"
+                                }, 
+                                {
+                                    "score": -5.903408, 
+                                    "word": "foods"
+                                }, 
+                                {
+                                    "score": -10.26774, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -20.01038, 
+                                    "word": "can"
+                                }, 
+                                {
+                                    "score": -7.426009, 
+                                    "word": "two"
+                                }, 
+                                {
+                                    "score": -8.030384, 
+                                    "word": "too"
+                                }, 
+                                {
+                                    "score": -10.38981, 
+                                    "word": "a"
+                                }, 
+                                {
+                                    "score": -10.38744, 
+                                    "word": "s"
+                                }, 
+                                {
+                                    "score": -25.89271, 
+                                    "word": "uh"
+                                }, 
+                                {
+                                    "score": -3.895383, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 2.231875, 
+                            "end": 2.26375, 
+                            "arcs": [
+                                {
+                                    "score": -24.99244, 
+                                    "word": "to"
+                                }, 
+                                {
+                                    "score": -19.06595, 
+                                    "word": "tv"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 2.26375, 
+                            "end": 2.295625, 
+                            "arcs": [
+                                {
+                                    "score": -19.11631, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -11.53591, 
+                                    "word": "and"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 2.295625, 
+                            "end": 2.3275, 
+                            "arcs": [
+                                {
+                                    "score": -17.11888, 
+                                    "word": "and"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 2.3275, 
+                            "end": 2.455, 
+                            "arcs": [
+                                {
+                                    "score": -8.809843, 
+                                    "word": "to"
+                                }, 
+                                {
+                                    "score": -24.27452, 
+                                    "word": "food"
+                                }, 
+                                {
+                                    "score": -27.86333, 
+                                    "word": "can"
+                                }, 
+                                {
+                                    "score": -3.432513, 
+                                    "word": "in"
+                                }, 
+                                {
+                                    "score": -0.03299326, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 2.455, 
+                            "end": 2.5825, 
+                            "arcs": [
+                                {
+                                    "score": -11.55376, 
+                                    "word": "to"
+                                }, 
+                                {
+                                    "score": -12.87054, 
+                                    "word": "food"
+                                }, 
+                                {
+                                    "score": -6.177434, 
+                                    "word": "eat"
+                                }, 
+                                {
+                                    "score": -1.548695, 
+                                    "word": "the"
+                                }, 
+                                {
+                                    "score": -8.053722, 
+                                    "word": "in"
+                                }, 
+                                {
+                                    "score": -0.2419838, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 2.5825, 
+                            "end": 2.71, 
+                            "arcs": [
+                                {
+                                    "score": -11.36312, 
+                                    "word": "eat"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 2.71, 
+                            "end": 2.955, 
+                            "arcs": [
+                                {
+                                    "score": -0.004888801, 
+                                    "word": "centre"
+                                }, 
+                                {
+                                    "score": -5.881832, 
+                                    "word": "central"
+                                }, 
+                                {
+                                    "score": -6.171932, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 2.955, 
+                            "end": 3.0775, 
+                            "arcs": [
+                                {
+                                    "score": -11.0161, 
+                                    "word": "are"
+                                }, 
+                                {
+                                    "score": -10.18683, 
+                                    "word": "a"
+                                }, 
+                                {
+                                    "score": -11.96, 
+                                    "word": "central"
+                                }, 
+                                {
+                                    "score": -6.174998, 
+                                    "word": "centre"
+                                }, 
+                                {
+                                    "score": -20.09857, 
+                                    "word": "uh"
+                                }, 
+                                {
+                                    "score": -20.02739, 
+                                    "word": "or"
+                                }, 
+                                {
+                                    "score": -0.002143604, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 3.0775, 
+                            "end": 3.2, 
+                            "arcs": [
+                                {
+                                    "score": -18.13961, 
+                                    "word": "are"
+                                }, 
+                                {
+                                    "score": -18.85952, 
+                                    "word": "a"
+                                }, 
+                                {
+                                    "score": -12.16076, 
+                                    "word": "of"
+                                }, 
+                                {
+                                    "score": -26.0018, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -29.27237, 
+                                    "word": "or"
+                                }, 
+                                {
+                                    "score": -27.27641, 
+                                    "word": "uh"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 3.2, 
+                            "end": 3.51, 
+                            "arcs": [
+                                {
+                                    "score": -0.0001, 
+                                    "word": "part"
+                                }, 
+                                {
+                                    "score": -13.53545, 
+                                    "word": "apart"
+                                }, 
+                                {
+                                    "score": -18.85084, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 3.51, 
+                            "end": 3.54, 
+                            "arcs": [
+                                {
+                                    "score": -0.0001, 
+                                    "word": "of"
+                                }, 
+                                {
+                                    "score": -16.03432, 
+                                    "word": "or"
+                                }, 
+                                {
+                                    "score": -21.42145, 
+                                    "word": "are"
+                                }, 
+                                {
+                                    "score": -16.76214, 
+                                    "word": "a"
+                                }, 
+                                {
+                                    "score": -10.77458, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 3.54, 
+                            "end": 3.57, 
+                            "arcs": [
+                                {
+                                    "score": -15.20021, 
+                                    "word": "the"
+                                }, 
+                                {
+                                    "score": -13.26908, 
+                                    "word": "in"
+                                }, 
+                                {
+                                    "score": -16.27771, 
+                                    "word": "or"
+                                }, 
+                                {
+                                    "score": -13.4083, 
+                                    "word": "of"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 3.57, 
+                            "end": 3.63, 
+                            "arcs": [
+                                {
+                                    "score": -23.91101, 
+                                    "word": "or"
+                                }, 
+                                {
+                                    "score": -13.30716, 
+                                    "word": "of"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 3.63, 
+                            "end": 3.875, 
+                            "arcs": [
+                                {
+                                    "score": -0.0001, 
+                                    "word": "town"
+                                }, 
+                                {
+                                    "score": -28.39574, 
+                                    "word": "tower"
+                                }, 
+                                {
+                                    "score": -24.55468, 
+                                    "word": "town's"
+                                }, 
+                                {
+                                    "score": -21.94729, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 3.875, 
+                            "end": 3.9975, 
+                            "arcs": [
+                                {
+                                    "score": -19.24574, 
+                                    "word": "uh"
+                                }, 
+                                {
+                                    "score": -18.09552, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -51.12819, 
+                                    "word": "or"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 3.9975, 
+                            "end": 4.028125, 
+                            "arcs": [
+                                {
+                                    "score": -35.16998, 
+                                    "word": "on"
+                                }, 
+                                {
+                                    "score": -25.87061, 
+                                    "word": "a"
+                                }, 
+                                {
+                                    "score": -23.089, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -17.81813, 
+                                    "word": "uh"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 4.028125, 
+                            "end": 4.05875, 
+                            "arcs": [
+                                {
+                                    "score": -18.60005, 
+                                    "word": "a"
+                                }, 
+                                {
+                                    "score": -16.26058, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -18.75994, 
+                                    "word": "and"
+                                }, 
+                                {
+                                    "score": -18.9521, 
+                                    "word": "or"
+                                }, 
+                                {
+                                    "score": -17.12232, 
+                                    "word": "uh"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 4.05875, 
+                            "end": 4.0740625, 
+                            "arcs": [
+                                {
+                                    "score": -17.25619, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -12.25534, 
+                                    "word": "a"
+                                }, 
+                                {
+                                    "score": -12.5188, 
+                                    "word": "tv"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 4.0740625, 
+                            "end": 4.089375, 
+                            "arcs": [
+                                {
+                                    "score": -33.64968, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 4.089375, 
+                            "end": 4.12, 
+                            "arcs": [
+                                {
+                                    "score": -20.56186, 
+                                    "word": "uh"
+                                }, 
+                                {
+                                    "score": -15.248, 
+                                    "word": "tv"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 4.12, 
+                            "end": 4.96, 
+                            "arcs": [
+                                {
+                                    "score": -0.0001, 
+                                    "word": "</s>"
+                                }, 
+                                {
+                                    "score": -11.39513, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -10.41504, 
+                                    "word": "uh"
+                                }, 
+                                {
+                                    "score": -5000000000.0, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }
+                    ], 
+                    "asr-hyps": [
+                        {
+                            "asr-hyp": "english food centre part of town", 
+                            "score": -0.513154
+                        }, 
+                        {
+                            "asr-hyp": "english food the centre part of town", 
+                            "score": -1.819865
+                        }, 
+                        {
+                            "asr-hyp": "english to centre part of town", 
+                            "score": -1.984695
+                        }, 
+                        {
+                            "asr-hyp": "english to the centre part of town", 
+                            "score": -3.291406
+                        }, 
+                        {
+                            "asr-hyp": "english food in centre part of town", 
+                            "score": -3.912673
+                        }, 
+                        {
+                            "asr-hyp": "english centre part of town", 
+                            "score": -4.177493
+                        }, 
+                        {
+                            "asr-hyp": "english food in the centre part of town", 
+                            "score": -5.219384
+                        }, 
+                        {
+                            "asr-hyp": "english to in centre part of town", 
+                            "score": -5.384215
+                        }, 
+                        {
+                            "asr-hyp": "english the centre part of town", 
+                            "score": -5.484204
+                        }, 
+                        {
+                            "asr-hyp": "english foods centre part of town", 
+                            "score": -6.185518
+                        }
+                    ]
+                }, 
+                "audio-file": "pt344x_0000904_0001214.wav"
+            }
+        }, 
+        {
+            "output": {
+                "transcript": "Did you say you are looking for a restaurant in the centre of town?", 
+                "end-time": 17.58, 
+                "start-time": 12.64, 
+                "dialog-acts": [
+                    {
+                        "slots": [
+                            [
+                                "area", 
+                                "centre"
+                            ]
+                        ], 
+                        "act": "expl-conf"
+                    }
+                ], 
+                "aborted": true
+            }, 
+            "turn-index": 1, 
+            "input": {
+                "live": {
+                    "asr-hyps": [
+                        {
+                            "asr-hyp": "yes", 
+                            "score": -0.001332
+                        }, 
+                        {
+                            "asr-hyp": "yeah", 
+                            "score": -6.750793
+                        }, 
+                        {
+                            "asr-hyp": "yes", 
+                            "score": -10.344972
+                        }, 
+                        {
+                            "asr-hyp": "yes yes", 
+                            "score": -10.402313
+                        }, 
+                        {
+                            "asr-hyp": "", 
+                            "score": -10.415096
+                        }, 
+                        {
+                            "asr-hyp": "uh yes", 
+                            "score": -10.839227
+                        }, 
+                        {
+                            "asr-hyp": "yes", 
+                            "score": -11.193797
+                        }, 
+                        {
+                            "asr-hyp": "yes i", 
+                            "score": -11.220957
+                        }, 
+                        {
+                            "asr-hyp": "yes a", 
+                            "score": -11.282071
+                        }, 
+                        {
+                            "asr-hyp": "yes s", 
+                            "score": -12.058
+                        }
+                    ], 
+                    "slu-hyps": [
+                        {
+                            "slu-hyp": [
+                                {
+                                    "slots": [], 
+                                    "act": "affirm"
+                                }
+                            ], 
+                            "score": 1.0
+                        }
+                    ]
+                }, 
+                "end-time": 18.06, 
+                "start-time": 17.58, 
+                "batch": {
+                    "cnet": [
+                        {
+                            "start": 0.0, 
+                            "end": 0.51, 
+                            "arcs": [
+                                {
+                                    "score": -0.0001, 
+                                    "word": "<s>"
+                                }, 
+                                {
+                                    "score": -29.56591, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 0.51, 
+                            "end": 0.765, 
+                            "arcs": [
+                                {
+                                    "score": -26.32303, 
+                                    "word": "of"
+                                }, 
+                                {
+                                    "score": -28.81161, 
+                                    "word": "is"
+                                }, 
+                                {
+                                    "score": -26.69047, 
+                                    "word": "uh"
+                                }, 
+                                {
+                                    "score": -13.73225, 
+                                    "word": "do"
+                                }, 
+                                {
+                                    "score": -18.39574, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 0.765, 
+                            "end": 0.8925, 
+                            "arcs": [
+                                {
+                                    "score": -18.39604, 
+                                    "word": "do"
+                                }, 
+                                {
+                                    "score": -18.81465, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -19.63028, 
+                                    "word": "uh"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 0.8925, 
+                            "end": 0.95625, 
+                            "arcs": [
+                                {
+                                    "score": -12.81009, 
+                                    "word": "a"
+                                }, 
+                                {
+                                    "score": -9.919413, 
+                                    "word": "uh"
+                                }, 
+                                {
+                                    "score": -12.52426, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 0.95625, 
+                            "end": 0.988125, 
+                            "arcs": [
+                                {
+                                    "score": -28.6606, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 0.988125, 
+                            "end": 1.02, 
+                            "arcs": [
+                                {
+                                    "score": -20.83589, 
+                                    "word": "a"
+                                }, 
+                                {
+                                    "score": -28.49626, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.02, 
+                            "end": 1.175, 
+                            "arcs": [
+                                {
+                                    "score": -0.0001, 
+                                    "word": "yes"
+                                }, 
+                                {
+                                    "score": -20.96831, 
+                                    "word": "the"
+                                }, 
+                                {
+                                    "score": -21.43094, 
+                                    "word": "do"
+                                }, 
+                                {
+                                    "score": -9.336337, 
+                                    "word": "yeah"
+                                }, 
+                                {
+                                    "score": -24.67302, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.175, 
+                            "end": 1.33, 
+                            "arcs": [
+                                {
+                                    "score": -20.47996, 
+                                    "word": "yeah"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.33, 
+                            "end": 1.64, 
+                            "arcs": [
+                                {
+                                    "score": -10.91541, 
+                                    "word": "s"
+                                }, 
+                                {
+                                    "score": -10.60818, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -10.79042, 
+                                    "word": "a"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.64, 
+                            "end": 2.34, 
+                            "arcs": [
+                                {
+                                    "score": -0.0001, 
+                                    "word": "</s>"
+                                }, 
+                                {
+                                    "score": -25.45529, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }
+                    ], 
+                    "asr-hyps": [
+                        {
+                            "asr-hyp": "yes", 
+                            "score": -0.000208
+                        }, 
+                        {
+                            "asr-hyp": "yeah", 
+                            "score": -9.336457
+                        }, 
+                        {
+                            "asr-hyp": "uh yes", 
+                            "score": -9.919566
+                        }, 
+                        {
+                            "asr-hyp": "yes i", 
+                            "score": -10.608323
+                        }, 
+                        {
+                            "asr-hyp": "yes a", 
+                            "score": -10.790569
+                        }, 
+                        {
+                            "asr-hyp": "yes s", 
+                            "score": -10.915556
+                        }, 
+                        {
+                            "asr-hyp": "i yes", 
+                            "score": -12.524413
+                        }, 
+                        {
+                            "asr-hyp": "a yes", 
+                            "score": -12.810247
+                        }, 
+                        {
+                            "asr-hyp": "do yes", 
+                            "score": -13.732453
+                        }, 
+                        {
+                            "asr-hyp": "uh yeah", 
+                            "score": -19.255816
+                        }
+                    ]
+                }, 
+                "audio-file": "pt344x_0001758_0001806.wav"
+            }
+        }, 
+        {
+            "output": {
+                "transcript": "I'm sorry but there is no restaurant serving english food", 
+                "end-time": 23.97, 
+                "start-time": 18.7074, 
+                "dialog-acts": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "english"
+                            ]
+                        ], 
+                        "act": "canthelp"
+                    }
+                ], 
+                "aborted": false
+            }, 
+            "turn-index": 2, 
+            "input": {
+                "live": {
+                    "asr-hyps": [
+                        {
+                            "asr-hyp": "british food", 
+                            "score": -0.000806
+                        }, 
+                        {
+                            "asr-hyp": "british", 
+                            "score": -8.510382
+                        }, 
+                        {
+                            "asr-hyp": "british british food", 
+                            "score": -8.64293
+                        }, 
+                        {
+                            "asr-hyp": "food", 
+                            "score": -8.65333
+                        }, 
+                        {
+                            "asr-hyp": "british food in", 
+                            "score": -8.778357
+                        }, 
+                        {
+                            "asr-hyp": "british food foods", 
+                            "score": -10.635289
+                        }, 
+                        {
+                            "asr-hyp": "british food can", 
+                            "score": -10.786121
+                        }, 
+                        {
+                            "asr-hyp": "british dish food", 
+                            "score": -10.933424
+                        }, 
+                        {
+                            "asr-hyp": "free food", 
+                            "score": -11.936041
+                        }, 
+                        {
+                            "asr-hyp": "great food", 
+                            "score": -11.996029
+                        }
+                    ], 
+                    "slu-hyps": [
+                        {
+                            "slu-hyp": [
+                                {
+                                    "slots": [
+                                        [
+                                            "food", 
+                                            "british"
+                                        ]
+                                    ], 
+                                    "act": "inform"
+                                }
+                            ], 
+                            "score": 0.9835782170803802
+                        }, 
+                        {
+                            "slu-hyp": [
+                                {
+                                    "slots": [], 
+                                    "act": "reqalts"
+                                }, 
+                                {
+                                    "slots": [
+                                        [
+                                            "food", 
+                                            "british"
+                                        ]
+                                    ], 
+                                    "act": "inform"
+                                }
+                            ], 
+                            "score": 0.016421782919619845
+                        }
+                    ]
+                }, 
+                "end-time": 25.01, 
+                "start-time": 23.97, 
+                "batch": {
+                    "cnet": [
+                        {
+                            "start": 0.0, 
+                            "end": 0.52, 
+                            "arcs": [
+                                {
+                                    "score": -0.0001, 
+                                    "word": "<s>"
+                                }, 
+                                {
+                                    "score": -22.9399, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 0.52, 
+                            "end": 0.585, 
+                            "arcs": [
+                                {
+                                    "score": -25.32477, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 0.585, 
+                            "end": 0.65, 
+                            "arcs": [
+                                {
+                                    "score": -30.98649, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 0.65, 
+                            "end": 0.715, 
+                            "arcs": [
+                                {
+                                    "score": -27.15319, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -26.20262, 
+                                    "word": "uh"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 0.715, 
+                            "end": 0.78, 
+                            "arcs": [
+                                {
+                                    "score": -23.55316, 
+                                    "word": "a"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 0.78, 
+                            "end": 0.91, 
+                            "arcs": [
+                                {
+                                    "score": -27.43435, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 0.91, 
+                            "end": 0.975, 
+                            "arcs": [
+                                {
+                                    "score": -18.35493, 
+                                    "word": "uh"
+                                }, 
+                                {
+                                    "score": -25.2141, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -26.35436, 
+                                    "word": "ah"
+                                }, 
+                                {
+                                    "score": -20.13477, 
+                                    "word": "in"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 0.975, 
+                            "end": 1.04, 
+                            "arcs": [
+                                {
+                                    "score": -19.25665, 
+                                    "word": "a"
+                                }, 
+                                {
+                                    "score": -22.28193, 
+                                    "word": "is"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.04, 
+                            "end": 1.07875, 
+                            "arcs": [
+                                {
+                                    "score": -0.0001, 
+                                    "word": "british"
+                                }, 
+                                {
+                                    "score": -21.0447, 
+                                    "word": "can"
+                                }, 
+                                {
+                                    "score": -14.99648, 
+                                    "word": "do"
+                                }, 
+                                {
+                                    "score": -11.21693, 
+                                    "word": "to"
+                                }, 
+                                {
+                                    "score": -17.2352, 
+                                    "word": "tours"
+                                }, 
+                                {
+                                    "score": -17.84975, 
+                                    "word": "tour"
+                                }, 
+                                {
+                                    "score": -25.57697, 
+                                    "word": "a"
+                                }, 
+                                {
+                                    "score": -19.63299, 
+                                    "word": "tv"
+                                }, 
+                                {
+                                    "score": -13.60941, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -24.72138, 
+                                    "word": "ok"
+                                }, 
+                                {
+                                    "score": -27.92842, 
+                                    "word": "is"
+                                }, 
+                                {
+                                    "score": -20.13477, 
+                                    "word": "the"
+                                }, 
+                                {
+                                    "score": -10.855, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.07875, 
+                            "end": 1.1175, 
+                            "arcs": [
+                                {
+                                    "score": -20.84291, 
+                                    "word": "do"
+                                }, 
+                                {
+                                    "score": -18.42854, 
+                                    "word": "to"
+                                }, 
+                                {
+                                    "score": -12.84747, 
+                                    "word": "the"
+                                }, 
+                                {
+                                    "score": -18.38479, 
+                                    "word": "a"
+                                }, 
+                                {
+                                    "score": -27.11843, 
+                                    "word": "can"
+                                }, 
+                                {
+                                    "score": -18.23836, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.1175, 
+                            "end": 1.195, 
+                            "arcs": [
+                                {
+                                    "score": -15.10351, 
+                                    "word": "for"
+                                }, 
+                                {
+                                    "score": -28.91286, 
+                                    "word": "tour"
+                                }, 
+                                {
+                                    "score": -17.57839, 
+                                    "word": "four"
+                                }, 
+                                {
+                                    "score": -13.61341, 
+                                    "word": "where"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.195, 
+                            "end": 1.35, 
+                            "arcs": [
+                                {
+                                    "score": -28.91286, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -11.48099, 
+                                    "word": "free"
+                                }, 
+                                {
+                                    "score": -10.94873, 
+                                    "word": "british"
+                                }, 
+                                {
+                                    "score": -13.55389, 
+                                    "word": "red"
+                                }, 
+                                {
+                                    "score": -13.52061, 
+                                    "word": "where"
+                                }, 
+                                {
+                                    "score": -13.01622, 
+                                    "word": "great"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.35, 
+                            "end": 1.4275, 
+                            "arcs": [
+                                {
+                                    "score": -13.36225, 
+                                    "word": "it"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.4275, 
+                            "end": 1.505, 
+                            "arcs": [
+                                {
+                                    "score": -28.8886, 
+                                    "word": "dish"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.505, 
+                            "end": 1.5825, 
+                            "arcs": [
+                                {
+                                    "score": -10.99628, 
+                                    "word": "dish"
+                                }, 
+                                {
+                                    "score": -31.91089, 
+                                    "word": "british"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.5825, 
+                            "end": 1.66, 
+                            "arcs": [
+                                {
+                                    "score": -22.26391, 
+                                    "word": "uh"
+                                }, 
+                                {
+                                    "score": -23.87276, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -18.82281, 
+                                    "word": "a"
+                                }, 
+                                {
+                                    "score": -16.14237, 
+                                    "word": "of"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.66, 
+                            "end": 1.686875, 
+                            "arcs": [
+                                {
+                                    "score": -0.0001185865, 
+                                    "word": "food"
+                                }, 
+                                {
+                                    "score": -21.1699, 
+                                    "word": "can"
+                                }, 
+                                {
+                                    "score": -15.46548, 
+                                    "word": "to"
+                                }, 
+                                {
+                                    "score": -10.83694, 
+                                    "word": "foods"
+                                }, 
+                                {
+                                    "score": -31.7662, 
+                                    "word": "a"
+                                }, 
+                                {
+                                    "score": -20.78654, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -19.53413, 
+                                    "word": "is"
+                                }, 
+                                {
+                                    "score": -9.326082, 
+                                    "word": "in"
+                                }, 
+                                {
+                                    "score": -16.15122, 
+                                    "word": "it"
+                                }, 
+                                {
+                                    "score": -11.55839, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.686875, 
+                            "end": 1.71375, 
+                            "arcs": [
+                                {
+                                    "score": -24.34711, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.71375, 
+                            "end": 1.7675, 
+                            "arcs": [
+                                {
+                                    "score": -19.51788, 
+                                    "word": "it"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.7675, 
+                            "end": 1.875, 
+                            "arcs": [
+                                {
+                                    "score": -24.6317, 
+                                    "word": "to"
+                                }, 
+                                {
+                                    "score": -14.18407, 
+                                    "word": "in"
+                                }, 
+                                {
+                                    "score": -11.56922, 
+                                    "word": "can"
+                                }, 
+                                {
+                                    "score": -16.0812, 
+                                    "word": "the"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.875, 
+                            "end": 2.09, 
+                            "arcs": [
+                                {
+                                    "score": -16.59365, 
+                                    "word": "food"
+                                }, 
+                                {
+                                    "score": -13.2568, 
+                                    "word": "in"
+                                }, 
+                                {
+                                    "score": -12.38486, 
+                                    "word": "the"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 2.09, 
+                            "end": 2.9, 
+                            "arcs": [
+                                {
+                                    "score": -0.0001, 
+                                    "word": "</s>"
+                                }, 
+                                {
+                                    "score": -5000000000.0, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }
+                    ], 
+                    "asr-hyps": [
+                        {
+                            "asr-hyp": "british food", 
+                            "score": -0.000225
+                        }, 
+                        {
+                            "asr-hyp": "british in", 
+                            "score": -9.326188
+                        }, 
+                        {
+                            "asr-hyp": "british foods", 
+                            "score": -10.837044
+                        }, 
+                        {
+                            "asr-hyp": "food", 
+                            "score": -10.85519
+                        }, 
+                        {
+                            "asr-hyp": "british british food", 
+                            "score": -10.948926
+                        }, 
+                        {
+                            "asr-hyp": "british dish food", 
+                            "score": -10.996489
+                        }, 
+                        {
+                            "asr-hyp": "to food", 
+                            "score": -11.217122
+                        }, 
+                        {
+                            "asr-hyp": "british free food", 
+                            "score": -11.481183
+                        }, 
+                        {
+                            "asr-hyp": "british", 
+                            "score": -11.558495
+                        }, 
+                        {
+                            "asr-hyp": "british food can", 
+                            "score": -11.569429
+                        }
+                    ]
+                }, 
+                "audio-file": "pt344x_0002397_0002501.wav"
+            }
+        }, 
+        {
+            "output": {
+                "transcript": "Would you like something in the cheap , moderate , or expensive price range?", 
+                "end-time": 30.96, 
+                "start-time": 25.7029, 
+                "dialog-acts": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "pricerange"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "aborted": false
+            }, 
+            "turn-index": 3, 
+            "input": {
+                "live": {
+                    "asr-hyps": [
+                        {
+                            "asr-hyp": "i don't care", 
+                            "score": -0.604309
+                        }, 
+                        {
+                            "asr-hyp": "don't care", 
+                            "score": -0.794205
+                        }, 
+                        {
+                            "asr-hyp": "i not care", 
+                            "score": -8.664363
+                        }, 
+                        {
+                            "asr-hyp": "i no care", 
+                            "score": -8.744733
+                        }, 
+                        {
+                            "asr-hyp": "i down care", 
+                            "score": -8.850134
+                        }, 
+                        {
+                            "asr-hyp": "not care", 
+                            "score": -8.854259
+                        }, 
+                        {
+                            "asr-hyp": "no care", 
+                            "score": -8.934629
+                        }, 
+                        {
+                            "asr-hyp": "down care", 
+                            "score": -9.04003
+                        }, 
+                        {
+                            "asr-hyp": "i don't here", 
+                            "score": -9.120225
+                        }, 
+                        {
+                            "asr-hyp": "i don't don't care", 
+                            "score": -9.203918
+                        }
+                    ], 
+                    "slu-hyps": [
+                        {
+                            "slu-hyp": [
+                                {
+                                    "slots": [
+                                        [
+                                            "this", 
+                                            "dontcare"
+                                        ]
+                                    ], 
+                                    "act": "inform"
+                                }
+                            ], 
+                            "score": 1.0
+                        }
+                    ]
+                }, 
+                "end-time": 31.66, 
+                "start-time": 30.96, 
+                "batch": {
+                    "cnet": [
+                        {
+                            "start": 0.0, 
+                            "end": 0.52, 
+                            "arcs": [
+                                {
+                                    "score": -0.0001, 
+                                    "word": "<s>"
+                                }, 
+                                {
+                                    "score": -23.52091, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 0.52, 
+                            "end": 0.78, 
+                            "arcs": [
+                                {
+                                    "score": -19.18095, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -30.37803, 
+                                    "word": "uh"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 0.78, 
+                            "end": 1.04, 
+                            "arcs": [
+                                {
+                                    "score": -11.53397, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -23.48202, 
+                                    "word": "a"
+                                }, 
+                                {
+                                    "score": -19.29006, 
+                                    "word": "uh"
+                                }, 
+                                {
+                                    "score": -20.74703, 
+                                    "word": "ok"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.04, 
+                            "end": 1.058125, 
+                            "arcs": [
+                                {
+                                    "score": -0.5393057, 
+                                    "word": "don't"
+                                }, 
+                                {
+                                    "score": -9.101697, 
+                                    "word": "down"
+                                }, 
+                                {
+                                    "score": -0.8757112, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -10.81339, 
+                                    "word": "tell"
+                                }, 
+                                {
+                                    "score": -46.17406, 
+                                    "word": "hello"
+                                }, 
+                                {
+                                    "score": -9.533632, 
+                                    "word": "no"
+                                }, 
+                                {
+                                    "score": -9.763762, 
+                                    "word": "not"
+                                }, 
+                                {
+                                    "score": -26.29254, 
+                                    "word": "a"
+                                }, 
+                                {
+                                    "score": -11.01629, 
+                                    "word": "can"
+                                }, 
+                                {
+                                    "score": -13.80828, 
+                                    "word": "and"
+                                }, 
+                                {
+                                    "score": -13.46383, 
+                                    "word": "could"
+                                }, 
+                                {
+                                    "score": -13.82066, 
+                                    "word": "do"
+                                }, 
+                                {
+                                    "score": -17.41963, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.058125, 
+                            "end": 1.07625, 
+                            "arcs": [
+                                {
+                                    "score": -23.48958, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.07625, 
+                            "end": 1.1125, 
+                            "arcs": [
+                                {
+                                    "score": -16.46827, 
+                                    "word": "do"
+                                }, 
+                                {
+                                    "score": -19.06909, 
+                                    "word": "can"
+                                }, 
+                                {
+                                    "score": -33.22667, 
+                                    "word": "a"
+                                }, 
+                                {
+                                    "score": -24.12366, 
+                                    "word": "and"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.1125, 
+                            "end": 1.185, 
+                            "arcs": [
+                                {
+                                    "score": -51.72781, 
+                                    "word": "down"
+                                }, 
+                                {
+                                    "score": -25.10535, 
+                                    "word": "no"
+                                }, 
+                                {
+                                    "score": -10.87828, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.185, 
+                            "end": 1.33, 
+                            "arcs": [
+                                {
+                                    "score": -19.89292, 
+                                    "word": "tell"
+                                }, 
+                                {
+                                    "score": -15.82289, 
+                                    "word": "down"
+                                }, 
+                                {
+                                    "score": -16.68484, 
+                                    "word": "no"
+                                }, 
+                                {
+                                    "score": -55.10264, 
+                                    "word": "hello"
+                                }, 
+                                {
+                                    "score": -13.72353, 
+                                    "word": "not"
+                                }, 
+                                {
+                                    "score": -0.8756663, 
+                                    "word": "don't"
+                                }, 
+                                {
+                                    "score": -18.18774, 
+                                    "word": "shop"
+                                }, 
+                                {
+                                    "score": -0.5388576, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.33, 
+                            "end": 1.525, 
+                            "arcs": [
+                                {
+                                    "score": -0.0001, 
+                                    "word": "care"
+                                }, 
+                                {
+                                    "score": -10.43941, 
+                                    "word": "here"
+                                }, 
+                                {
+                                    "score": -43.905, 
+                                    "word": "can"
+                                }, 
+                                {
+                                    "score": -17.47969, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.525, 
+                            "end": 1.57375, 
+                            "arcs": [
+                                {
+                                    "score": -24.2506, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -32.92139, 
+                                    "word": "uh"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.57375, 
+                            "end": 1.6225, 
+                            "arcs": [
+                                {
+                                    "score": -31.42317, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.6225, 
+                            "end": 1.67125, 
+                            "arcs": [
+                                {
+                                    "score": -18.79183, 
+                                    "word": "uh"
+                                }, 
+                                {
+                                    "score": -16.61724, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.67125, 
+                            "end": 1.72, 
+                            "arcs": [
+                                {
+                                    "score": -10.69515, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -11.34872, 
+                                    "word": "uh"
+                                }, 
+                                {
+                                    "score": -12.21122, 
+                                    "word": "a"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.72, 
+                            "end": 2.56, 
+                            "arcs": [
+                                {
+                                    "score": -0.0001, 
+                                    "word": "</s>"
+                                }, 
+                                {
+                                    "score": -24.34727, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }
+                    ], 
+                    "asr-hyps": [
+                        {
+                            "asr-hyp": "don't care", 
+                            "score": -1.078261
+                        }, 
+                        {
+                            "asr-hyp": "i care", 
+                            "score": -1.414666
+                        }, 
+                        {
+                            "asr-hyp": "don't don't care", 
+                            "score": -1.41507
+                        }, 
+                        {
+                            "asr-hyp": "i don't care", 
+                            "score": -1.751475
+                        }, 
+                        {
+                            "asr-hyp": "down care", 
+                            "score": -9.640652
+                        }, 
+                        {
+                            "asr-hyp": "down don't care", 
+                            "score": -9.977461
+                        }, 
+                        {
+                            "asr-hyp": "no care", 
+                            "score": -10.072587
+                        }, 
+                        {
+                            "asr-hyp": "not care", 
+                            "score": -10.302717
+                        }, 
+                        {
+                            "asr-hyp": "no don't care", 
+                            "score": -10.409395
+                        }, 
+                        {
+                            "asr-hyp": "not don't care", 
+                            "score": -10.639526
+                        }
+                    ]
+                }, 
+                "audio-file": "pt344x_0003096_0003166.wav"
+            }
+        }, 
+        {
+            "output": {
+                "transcript": "cotto is a nice place in the centre of town serving tasty british food", 
+                "end-time": 38.24, 
+                "start-time": 32.3398, 
+                "dialog-acts": [
+                    {
+                        "slots": [
+                            [
+                                "name", 
+                                "cotto"
+                            ]
+                        ], 
+                        "act": "offer"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "british"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "area", 
+                                "centre"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "aborted": false
+            }, 
+            "turn-index": 4, 
+            "input": {
+                "live": {
+                    "asr-hyps": [
+                        {
+                            "asr-hyp": "what is the address and phone number", 
+                            "score": -0.017266
+                        }, 
+                        {
+                            "asr-hyp": "is the address and phone number", 
+                            "score": -5.124501
+                        }, 
+                        {
+                            "asr-hyp": "what what's the address and phone number", 
+                            "score": -5.176296
+                        }, 
+                        {
+                            "asr-hyp": "what the address and phone number", 
+                            "score": -6.820161
+                        }, 
+                        {
+                            "asr-hyp": "what is is the address and phone number", 
+                            "score": -6.889203
+                        }, 
+                        {
+                            "asr-hyp": "where is the address and phone number", 
+                            "score": -6.930442
+                        }, 
+                        {
+                            "asr-hyp": "what what is the address and phone number", 
+                            "score": -7.251037
+                        }, 
+                        {
+                            "asr-hyp": "uh is the address and phone number", 
+                            "score": -7.510147
+                        }, 
+                        {
+                            "asr-hyp": "what is the address phone number", 
+                            "score": -8.464172
+                        }, 
+                        {
+                            "asr-hyp": "what with the address and phone number", 
+                            "score": -8.534217
+                        }
+                    ], 
+                    "slu-hyps": [
+                        {
+                            "slu-hyp": [
+                                {
+                                    "slots": [
+                                        [
+                                            "slot", 
+                                            "phone"
+                                        ]
+                                    ], 
+                                    "act": "request"
+                                }, 
+                                {
+                                    "slots": [
+                                        [
+                                            "slot", 
+                                            "addr"
+                                        ]
+                                    ], 
+                                    "act": "request"
+                                }
+                            ], 
+                            "score": 0.7232050229552552
+                        }, 
+                        {
+                            "slu-hyp": [
+                                {
+                                    "slots": [
+                                        [
+                                            "slot", 
+                                            "addr"
+                                        ]
+                                    ], 
+                                    "act": "request"
+                                }
+                            ], 
+                            "score": 0.22428785546716642
+                        }, 
+                        {
+                            "slu-hyp": [
+                                {
+                                    "slots": [
+                                        [
+                                            "slot", 
+                                            "phone"
+                                        ]
+                                    ], 
+                                    "act": "request"
+                                }
+                            ], 
+                            "score": 0.052507121577578336
+                        }
+                    ]
+                }, 
+                "end-time": 40.47, 
+                "start-time": 38.24, 
+                "batch": {
+                    "cnet": [
+                        {
+                            "start": 0.0, 
+                            "end": 0.5, 
+                            "arcs": [
+                                {
+                                    "score": -0.0001, 
+                                    "word": "<s>"
+                                }, 
+                                {
+                                    "score": -24.57626, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 0.5, 
+                            "end": 0.75, 
+                            "arcs": [
+                                {
+                                    "score": -19.77633, 
+                                    "word": "can"
+                                }, 
+                                {
+                                    "score": -25.83767, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 0.75, 
+                            "end": 0.875, 
+                            "arcs": [
+                                {
+                                    "score": -18.35787, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 0.875, 
+                            "end": 1.0, 
+                            "arcs": [
+                                {
+                                    "score": -17.46373, 
+                                    "word": "a"
+                                }, 
+                                {
+                                    "score": -13.62354, 
+                                    "word": "uh"
+                                }, 
+                                {
+                                    "score": -17.83623, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -16.18667, 
+                                    "word": "oh"
+                                }, 
+                                {
+                                    "score": -17.16737, 
+                                    "word": "ah"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.0, 
+                            "end": 1.09, 
+                            "arcs": [
+                                {
+                                    "score": -0.006457152, 
+                                    "word": "what"
+                                }, 
+                                {
+                                    "score": -17.67247, 
+                                    "word": "a"
+                                }, 
+                                {
+                                    "score": -7.262112, 
+                                    "word": "uh"
+                                }, 
+                                {
+                                    "score": -8.797813, 
+                                    "word": "ah"
+                                }, 
+                                {
+                                    "score": -10.09786, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -11.49185, 
+                                    "word": "oh"
+                                }, 
+                                {
+                                    "score": -5.197159, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.09, 
+                            "end": 1.18, 
+                            "arcs": [
+                                {
+                                    "score": -7.013565, 
+                                    "word": "what"
+                                }, 
+                                {
+                                    "score": -19.66531, 
+                                    "word": "one"
+                                }, 
+                                {
+                                    "score": -12.06114, 
+                                    "word": "what's"
+                                }, 
+                                {
+                                    "score": -9.797826, 
+                                    "word": "when"
+                                }, 
+                                {
+                                    "score": -6.25568, 
+                                    "word": "where"
+                                }, 
+                                {
+                                    "score": -20.85437, 
+                                    "word": "plea"
+                                }, 
+                                {
+                                    "score": -33.75667, 
+                                    "word": "play"
+                                }, 
+                                {
+                                    "score": -18.14138, 
+                                    "word": "please"
+                                }, 
+                                {
+                                    "score": -25.79691, 
+                                    "word": "place"
+                                }, 
+                                {
+                                    "score": -0.002884643, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.18, 
+                            "end": 1.225, 
+                            "arcs": [
+                                {
+                                    "score": -0.005546535, 
+                                    "word": "is"
+                                }, 
+                                {
+                                    "score": -9.550014, 
+                                    "word": "with"
+                                }, 
+                                {
+                                    "score": -5.696981, 
+                                    "word": "what's"
+                                }, 
+                                {
+                                    "score": -33.15293, 
+                                    "word": "do"
+                                }, 
+                                {
+                                    "score": -22.28037, 
+                                    "word": "it"
+                                }, 
+                                {
+                                    "score": -25.7764, 
+                                    "word": "are"
+                                }, 
+                                {
+                                    "score": -17.10542, 
+                                    "word": "in"
+                                }, 
+                                {
+                                    "score": -8.958225, 
+                                    "word": "please"
+                                }, 
+                                {
+                                    "score": -20.691, 
+                                    "word": "place"
+                                }, 
+                                {
+                                    "score": -6.227093, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.225, 
+                            "end": 1.27, 
+                            "arcs": [
+                                {
+                                    "score": -23.72657, 
+                                    "word": "it"
+                                }, 
+                                {
+                                    "score": -21.96717, 
+                                    "word": "is"
+                                }, 
+                                {
+                                    "score": -26.67124, 
+                                    "word": "you"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.27, 
+                            "end": 1.36, 
+                            "arcs": [
+                                {
+                                    "score": -6.226043, 
+                                    "word": "is"
+                                }, 
+                                {
+                                    "score": -18.65132, 
+                                    "word": "in"
+                                }, 
+                                {
+                                    "score": -21.70273, 
+                                    "word": "to"
+                                }, 
+                                {
+                                    "score": -23.0786, 
+                                    "word": "it"
+                                }, 
+                                {
+                                    "score": -15.50216, 
+                                    "word": "what's"
+                                }, 
+                                {
+                                    "score": -0.001979411, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.36, 
+                            "end": 1.56, 
+                            "arcs": [
+                                {
+                                    "score": -0.0001, 
+                                    "word": "the"
+                                }, 
+                                {
+                                    "score": -16.25158, 
+                                    "word": "st."
+                                }, 
+                                {
+                                    "score": -18.23137, 
+                                    "word": "b"
+                                }, 
+                                {
+                                    "score": -17.50354, 
+                                    "word": "be"
+                                }, 
+                                {
+                                    "score": -17.83536, 
+                                    "word": "see"
+                                }, 
+                                {
+                                    "score": -22.65291, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.56, 
+                            "end": 1.935, 
+                            "arcs": [
+                                {
+                                    "score": -0.0001, 
+                                    "word": "address"
+                                }, 
+                                {
+                                    "score": -5000000000.0, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.935, 
+                            "end": 2.1225, 
+                            "arcs": [
+                                {
+                                    "score": -32.7034, 
+                                    "word": "it"
+                                }, 
+                                {
+                                    "score": -8.587301, 
+                                    "word": "and"
+                                }, 
+                                {
+                                    "score": -12.05291, 
+                                    "word": "to"
+                                }, 
+                                {
+                                    "score": -20.79992, 
+                                    "word": "of"
+                                }, 
+                                {
+                                    "score": -22.14664, 
+                                    "word": "a"
+                                }, 
+                                {
+                                    "score": -19.05376, 
+                                    "word": "or"
+                                }, 
+                                {
+                                    "score": -0.0001923111, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 2.1225, 
+                            "end": 2.21625, 
+                            "arcs": [
+                                {
+                                    "score": -14.92345, 
+                                    "word": "the"
+                                }, 
+                                {
+                                    "score": -17.7487, 
+                                    "word": "to"
+                                }, 
+                                {
+                                    "score": -14.93625, 
+                                    "word": "of"
+                                }, 
+                                {
+                                    "score": -23.26435, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 2.21625, 
+                            "end": 2.263125, 
+                            "arcs": [
+                                {
+                                    "score": -12.03166, 
+                                    "word": "the"
+                                }, 
+                                {
+                                    "score": -19.84293, 
+                                    "word": "to"
+                                }, 
+                                {
+                                    "score": -24.03747, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -10.94174, 
+                                    "word": "of"
+                                }, 
+                                {
+                                    "score": -32.12628, 
+                                    "word": "it"
+                                }, 
+                                {
+                                    "score": -25.31488, 
+                                    "word": "is"
+                                }, 
+                                {
+                                    "score": -21.10417, 
+                                    "word": "for"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 2.263125, 
+                            "end": 2.31, 
+                            "arcs": [
+                                {
+                                    "score": -25.29307, 
+                                    "word": "it"
+                                }, 
+                                {
+                                    "score": -26.50083, 
+                                    "word": "could"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 2.31, 
+                            "end": 2.3675, 
+                            "arcs": [
+                                {
+                                    "score": -0.0001007019, 
+                                    "word": "and"
+                                }, 
+                                {
+                                    "score": -23.22323, 
+                                    "word": "it"
+                                }, 
+                                {
+                                    "score": -22.70534, 
+                                    "word": "can"
+                                }, 
+                                {
+                                    "score": -11.11078, 
+                                    "word": "then"
+                                }, 
+                                {
+                                    "score": -23.54374, 
+                                    "word": "any"
+                                }, 
+                                {
+                                    "score": -18.26664, 
+                                    "word": "in"
+                                }, 
+                                {
+                                    "score": -28.82999, 
+                                    "word": "please"
+                                }, 
+                                {
+                                    "score": -19.10357, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -16.97008, 
+                                    "word": "an"
+                                }, 
+                                {
+                                    "score": -12.19761, 
+                                    "word": "a"
+                                }, 
+                                {
+                                    "score": -11.86165, 
+                                    "word": "the"
+                                }, 
+                                {
+                                    "score": -9.517021, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 2.3675, 
+                            "end": 2.425, 
+                            "arcs": [
+                                {
+                                    "score": -23.10425, 
+                                    "word": "in"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 2.425, 
+                            "end": 2.54, 
+                            "arcs": [
+                                {
+                                    "score": -24.85347, 
+                                    "word": "it"
+                                }, 
+                                {
+                                    "score": -9.522963, 
+                                    "word": "a"
+                                }, 
+                                {
+                                    "score": -7.717423, 
+                                    "word": "its"
+                                }, 
+                                {
+                                    "score": -23.33606, 
+                                    "word": "please"
+                                }, 
+                                {
+                                    "score": -25.6289, 
+                                    "word": "any"
+                                }, 
+                                {
+                                    "score": -22.35609, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -5.478882, 
+                                    "word": "the"
+                                }, 
+                                {
+                                    "score": -0.004703194, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 2.54, 
+                            "end": 2.8, 
+                            "arcs": [
+                                {
+                                    "score": -0.0001, 
+                                    "word": "phone"
+                                }, 
+                                {
+                                    "score": -15.8442, 
+                                    "word": "phones"
+                                }, 
+                                {
+                                    "score": -17.54615, 
+                                    "word": "far"
+                                }, 
+                                {
+                                    "score": -18.52107, 
+                                    "word": "uhm"
+                                }, 
+                                {
+                                    "score": -17.88752, 
+                                    "word": "um"
+                                }, 
+                                {
+                                    "score": -5000000000.0, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 2.8, 
+                            "end": 3.035, 
+                            "arcs": [
+                                {
+                                    "score": -0.0001, 
+                                    "word": "number"
+                                }, 
+                                {
+                                    "score": -22.32517, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 3.035, 
+                            "end": 3.1525, 
+                            "arcs": [
+                                {
+                                    "score": -16.90102, 
+                                    "word": "of"
+                                }, 
+                                {
+                                    "score": -27.21609, 
+                                    "word": "uh"
+                                }, 
+                                {
+                                    "score": -41.36817, 
+                                    "word": "and"
+                                }, 
+                                {
+                                    "score": -47.33632, 
+                                    "word": "or"
+                                }, 
+                                {
+                                    "score": -46.30716, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 3.1525, 
+                            "end": 3.181875, 
+                            "arcs": [
+                                {
+                                    "score": -19.02364, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -36.36903, 
+                                    "word": "or"
+                                }, 
+                                {
+                                    "score": -41.28037, 
+                                    "word": "uh"
+                                }, 
+                                {
+                                    "score": -19.64722, 
+                                    "word": "and"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 3.181875, 
+                            "end": 3.21125, 
+                            "arcs": [
+                                {
+                                    "score": -34.745, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -35.8952, 
+                                    "word": "uh"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 3.21125, 
+                            "end": 3.240625, 
+                            "arcs": [
+                                {
+                                    "score": -19.64966, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -20.65737, 
+                                    "word": "uh"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 3.240625, 
+                            "end": 3.27, 
+                            "arcs": [
+                                {
+                                    "score": -20.3073, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -19.36429, 
+                                    "word": "uh"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 3.27, 
+                            "end": 3.68, 
+                            "arcs": [
+                                {
+                                    "score": -0.0001, 
+                                    "word": "</s>"
+                                }, 
+                                {
+                                    "score": -13.56005, 
+                                    "word": "or"
+                                }, 
+                                {
+                                    "score": -12.49697, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -11.01704, 
+                                    "word": "uh"
+                                }, 
+                                {
+                                    "score": -12.94262, 
+                                    "word": "a"
+                                }, 
+                                {
+                                    "score": -19.66729, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 3.68, 
+                            "end": 4.09, 
+                            "arcs": [
+                                {
+                                    "score": -10.64393, 
+                                    "word": "</s>"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }
+                    ], 
+                    "asr-hyps": [
+                        {
+                            "asr-hyp": "what is the address and phone number", 
+                            "score": -0.021938
+                        }, 
+                        {
+                            "asr-hyp": "is the address and phone number", 
+                            "score": -5.212639
+                        }, 
+                        {
+                            "asr-hyp": "what is the address and the phone number", 
+                            "score": -5.496117
+                        }, 
+                        {
+                            "asr-hyp": "what what's the address and phone number", 
+                            "score": -5.713372
+                        }, 
+                        {
+                            "asr-hyp": "what the address and phone number", 
+                            "score": -6.243484
+                        }, 
+                        {
+                            "asr-hyp": "what is is the address and phone number", 
+                            "score": -6.246002
+                        }, 
+                        {
+                            "asr-hyp": "what where is the address and phone number", 
+                            "score": -6.274733
+                        }, 
+                        {
+                            "asr-hyp": "what what is the address and phone number", 
+                            "score": -7.032618
+                        }, 
+                        {
+                            "asr-hyp": "uh is the address and phone number", 
+                            "score": -7.277592
+                        }, 
+                        {
+                            "asr-hyp": "what is the address and its phone number", 
+                            "score": -7.734658
+                        }
+                    ]
+                }, 
+                "audio-file": "pt344x_0003824_0004047.wav"
+            }
+        }, 
+        {
+            "output": {
+                "transcript": "The phone number of cotto is 01223 302010 and it is on 183 East Road City Centre .", 
+                "end-time": 52.23, 
+                "start-time": 40.97, 
+                "dialog-acts": [
+                    {
+                        "slots": [
+                            [
+                                "name", 
+                                "cotto"
+                            ]
+                        ], 
+                        "act": "offer"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "phone", 
+                                "01223 302010"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "addr", 
+                                "183 east road city centre"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "aborted": true
+            }, 
+            "turn-index": 5, 
+            "input": {
+                "live": {
+                    "asr-hyps": [
+                        {
+                            "asr-hyp": "thank you goodbye", 
+                            "score": -0.16758
+                        }, 
+                        {
+                            "asr-hyp": "thank you goodbye bye", 
+                            "score": -2.605047
+                        }, 
+                        {
+                            "asr-hyp": "thank you good", 
+                            "score": -2.605058
+                        }, 
+                        {
+                            "asr-hyp": "thank you good bye", 
+                            "score": -5.042525
+                        }, 
+                        {
+                            "asr-hyp": "thank u goodbye", 
+                            "score": -11.928044
+                        }, 
+                        {
+                            "asr-hyp": "thank thank you goodbye", 
+                            "score": -11.998201
+                        }, 
+                        {
+                            "asr-hyp": "thank you", 
+                            "score": -12.26052
+                        }, 
+                        {
+                            "asr-hyp": "uh you goodbye", 
+                            "score": -12.432136
+                        }, 
+                        {
+                            "asr-hyp": "thank you goodbye by", 
+                            "score": -12.441318
+                        }, 
+                        {
+                            "asr-hyp": "ah you goodbye", 
+                            "score": -13.374344
+                        }
+                    ], 
+                    "slu-hyps": [
+                        {
+                            "slu-hyp": [
+                                {
+                                    "slots": [], 
+                                    "act": "bye"
+                                }
+                            ], 
+                            "score": 1.0
+                        }
+                    ]
+                }, 
+                "end-time": 53.24, 
+                "start-time": 52.23, 
+                "batch": {
+                    "cnet": [
+                        {
+                            "start": 0.0, 
+                            "end": 0.51, 
+                            "arcs": [
+                                {
+                                    "score": -0.0001, 
+                                    "word": "<s>"
+                                }, 
+                                {
+                                    "score": -23.55213, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 0.51, 
+                            "end": 0.5259375, 
+                            "arcs": [
+                                {
+                                    "score": -12.24156, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -17.13446, 
+                                    "word": "uh"
+                                }, 
+                                {
+                                    "score": -39.61331, 
+                                    "word": "ah"
+                                }, 
+                                {
+                                    "score": -36.19148, 
+                                    "word": "can"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 0.5259375, 
+                            "end": 0.541875, 
+                            "arcs": [
+                                {
+                                    "score": -57.21302, 
+                                    "word": "uh"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 0.541875, 
+                            "end": 0.57375, 
+                            "arcs": [
+                                {
+                                    "score": -44.98975, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -48.74483, 
+                                    "word": "uh"
+                                }, 
+                                {
+                                    "score": -28.23633, 
+                                    "word": "can"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 0.57375, 
+                            "end": 0.5896875, 
+                            "arcs": [
+                                {
+                                    "score": -25.63282, 
+                                    "word": "uh"
+                                }, 
+                                {
+                                    "score": -26.03651, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -22.9882, 
+                                    "word": "is"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 0.5896875, 
+                            "end": 0.605625, 
+                            "arcs": [
+                                {
+                                    "score": -41.00698, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 0.605625, 
+                            "end": 0.6375, 
+                            "arcs": [
+                                {
+                                    "score": -35.15111, 
+                                    "word": "uh"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 0.6375, 
+                            "end": 0.765, 
+                            "arcs": [
+                                {
+                                    "score": -19.19207, 
+                                    "word": "is"
+                                }, 
+                                {
+                                    "score": -23.75777, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -31.91616, 
+                                    "word": "uh"
+                                }, 
+                                {
+                                    "score": -18.02355, 
+                                    "word": "it"
+                                }, 
+                                {
+                                    "score": -20.27129, 
+                                    "word": "can"
+                                }, 
+                                {
+                                    "score": -18.665, 
+                                    "word": "could"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 0.765, 
+                            "end": 0.8925, 
+                            "arcs": [
+                                {
+                                    "score": -18.70481, 
+                                    "word": "a"
+                                }, 
+                                {
+                                    "score": -12.57598, 
+                                    "word": "is"
+                                }, 
+                                {
+                                    "score": -8.088599, 
+                                    "word": "uh"
+                                }, 
+                                {
+                                    "score": -17.98728, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -12.48177, 
+                                    "word": "to"
+                                }, 
+                                {
+                                    "score": -0.000314341, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 0.8925, 
+                            "end": 1.02, 
+                            "arcs": [
+                                {
+                                    "score": -18.70481, 
+                                    "word": "to"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.02, 
+                            "end": 1.17, 
+                            "arcs": [
+                                {
+                                    "score": -0.0001, 
+                                    "word": "thank"
+                                }, 
+                                {
+                                    "score": -18.11007, 
+                                    "word": "think"
+                                }, 
+                                {
+                                    "score": -19.07219, 
+                                    "word": "can"
+                                }, 
+                                {
+                                    "score": -5000000000.0, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.17, 
+                            "end": 1.32, 
+                            "arcs": [
+                                {
+                                    "score": -27.66813, 
+                                    "word": "you"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.32, 
+                            "end": 1.3825, 
+                            "arcs": [
+                                {
+                                    "score": -0.0001, 
+                                    "word": "you"
+                                }, 
+                                {
+                                    "score": -11.7691, 
+                                    "word": "u"
+                                }, 
+                                {
+                                    "score": -5000000000.0, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.3825, 
+                            "end": 1.445, 
+                            "arcs": [
+                                {
+                                    "score": -23.48413, 
+                                    "word": "you"
+                                }, 
+                                {
+                                    "score": -30.73444, 
+                                    "word": "u"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.445, 
+                            "end": 1.47625, 
+                            "arcs": [
+                                {
+                                    "score": -29.04062, 
+                                    "word": "are"
+                                }, 
+                                {
+                                    "score": -29.34037, 
+                                    "word": "a"
+                                }, 
+                                {
+                                    "score": -18.61379, 
+                                    "word": "uh"
+                                }, 
+                                {
+                                    "score": -20.29005, 
+                                    "word": "u"
+                                }, 
+                                {
+                                    "score": -15.61602, 
+                                    "word": "you"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.47625, 
+                            "end": 1.5075, 
+                            "arcs": [
+                                {
+                                    "score": -26.90165, 
+                                    "word": "a"
+                                }, 
+                                {
+                                    "score": -26.25299, 
+                                    "word": "are"
+                                }, 
+                                {
+                                    "score": -25.07368, 
+                                    "word": "uh"
+                                }, 
+                                {
+                                    "score": -34.38815, 
+                                    "word": "or"
+                                }, 
+                                {
+                                    "score": -14.65891, 
+                                    "word": "know"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.5075, 
+                            "end": 1.53875, 
+                            "arcs": [
+                                {
+                                    "score": -13.22623, 
+                                    "word": "a"
+                                }, 
+                                {
+                                    "score": -21.88813, 
+                                    "word": "uh"
+                                }, 
+                                {
+                                    "score": -19.48926, 
+                                    "word": "are"
+                                }, 
+                                {
+                                    "score": -27.09708, 
+                                    "word": "the"
+                                }, 
+                                {
+                                    "score": -22.88561, 
+                                    "word": "of"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.53875, 
+                            "end": 1.57, 
+                            "arcs": [
+                                {
+                                    "score": -35.97048, 
+                                    "word": "you"
+                                }, 
+                                {
+                                    "score": -18.86957, 
+                                    "word": "a"
+                                }, 
+                                {
+                                    "score": -14.3232, 
+                                    "word": "are"
+                                }, 
+                                {
+                                    "score": -34.62887, 
+                                    "word": "uh"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.57, 
+                            "end": 1.62875, 
+                            "arcs": [
+                                {
+                                    "score": -0.05666453, 
+                                    "word": "goodbye"
+                                }, 
+                                {
+                                    "score": -2.898835, 
+                                    "word": "good"
+                                }, 
+                                {
+                                    "score": -28.41042, 
+                                    "word": "do"
+                                }, 
+                                {
+                                    "score": -21.79639, 
+                                    "word": "to"
+                                }, 
+                                {
+                                    "score": -20.52127, 
+                                    "word": "the"
+                                }, 
+                                {
+                                    "score": -34.11357, 
+                                    "word": "are"
+                                }, 
+                                {
+                                    "score": -35.14464, 
+                                    "word": "a"
+                                }, 
+                                {
+                                    "score": -33.90931, 
+                                    "word": "you"
+                                }, 
+                                {
+                                    "score": -13.33159, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.62875, 
+                            "end": 1.6875, 
+                            "arcs": [
+                                {
+                                    "score": -20.07779, 
+                                    "word": "you"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.6875, 
+                            "end": 1.805, 
+                            "arcs": [
+                                {
+                                    "score": -17.09522, 
+                                    "word": "bye"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.805, 
+                            "end": 1.9225, 
+                            "arcs": [
+                                {
+                                    "score": -2.898859, 
+                                    "word": "bye"
+                                }, 
+                                {
+                                    "score": -12.73546, 
+                                    "word": "by"
+                                }, 
+                                {
+                                    "score": -23.01988, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -0.05666454, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 1.9225, 
+                            "end": 2.04, 
+                            "arcs": [
+                                {
+                                    "score": -15.378, 
+                                    "word": "i"
+                                }, 
+                                {
+                                    "score": -15.99811, 
+                                    "word": "a"
+                                }, 
+                                {
+                                    "score": -0.0001, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }, 
+                        {
+                            "start": 2.04, 
+                            "end": 2.87, 
+                            "arcs": [
+                                {
+                                    "score": -0.0001, 
+                                    "word": "</s>"
+                                }, 
+                                {
+                                    "score": -19.63754, 
+                                    "word": "!null"
+                                }
+                            ]
+                        }
+                    ], 
+                    "asr-hyps": [
+                        {
+                            "asr-hyp": "thank you goodbye", 
+                            "score": -0.113659
+                        }, 
+                        {
+                            "asr-hyp": "thank you good", 
+                            "score": -2.95583
+                        }, 
+                        {
+                            "asr-hyp": "thank you goodbye bye", 
+                            "score": -2.955853
+                        }, 
+                        {
+                            "asr-hyp": "thank you good bye", 
+                            "score": -5.798024
+                        }, 
+                        {
+                            "asr-hyp": "uh thank you goodbye", 
+                            "score": -8.201944
+                        }, 
+                        {
+                            "asr-hyp": "uh thank you good", 
+                            "score": -11.044115
+                        }, 
+                        {
+                            "asr-hyp": "uh thank you goodbye bye", 
+                            "score": -11.044139
+                        }, 
+                        {
+                            "asr-hyp": "thank u goodbye", 
+                            "score": -11.882755
+                        }, 
+                        {
+                            "asr-hyp": "i thank you goodbye", 
+                            "score": -12.355214
+                        }, 
+                        {
+                            "asr-hyp": "to thank you goodbye", 
+                            "score": -12.595111
+                        }
+                    ]
+                }, 
+                "audio-file": "pt344x_0005223_0005324.wav"
+            }
+        }
+    ], 
+    "system-specific": {
+        "dialog-manager": 1, 
+        "acoustic-condition": 1
+    }
+}

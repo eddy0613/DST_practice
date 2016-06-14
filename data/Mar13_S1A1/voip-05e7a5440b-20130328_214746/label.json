@@ -1,0 +1,175 @@
+{
+    "caller-id": "05e7a5440b", 
+    "turns": [
+        {
+            "turn-index": 0, 
+            "goal-labels": {
+                "food": "italian", 
+                "area": "east"
+            }, 
+            "transcription": "can i get a restaurant in the east part of town that serves italian food", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0001000_0001296.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "italian"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "area", 
+                                "east"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(type=restaurant,area=east,food=italian)"
+            }
+        }, 
+        {
+            "turn-index": 1, 
+            "goal-labels": {
+                "food": "italian", 
+                "area": "east"
+            }, 
+            "transcription": "can i get the address", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002070_0002144.wav", 
+            "requested-slots": [
+                "addr"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "addr"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(addr)"
+            }
+        }, 
+        {
+            "turn-index": 2, 
+            "goal-labels": {
+                "food": "italian", 
+                "area": "east"
+            }, 
+            "transcription": "can i get the phone number", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002896_0002981.wav", 
+            "requested-slots": [
+                "phone"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "phone"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(phone)"
+            }
+        }, 
+        {
+            "turn-index": 3, 
+            "goal-labels": {
+                "food": "italian", 
+                "area": "east"
+            }, 
+            "transcription": "and the post code", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0003830_0003909.wav", 
+            "requested-slots": [
+                "postcode"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "postcode"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(postcode)"
+            }
+        }, 
+        {
+            "turn-index": 4, 
+            "goal-labels": {
+                "food": "italian", 
+                "area": "east"
+            }, 
+            "transcription": "thank you good bye", 
+            "method-label": "finished", 
+            "audio-file": "pt344x_0004692_0004755.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "thankyou"
+                    }, 
+                    {
+                        "slots": [], 
+                        "act": "bye"
+                    }
+                ], 
+                "cam": "thankyou()|bye()"
+            }
+        }
+    ], 
+    "task-information": {
+        "goal": {
+            "text": "Task 04092: You want to find a restaurant in the east part of town and it should serve italian food. You want to know the address, phone number, and postcode of the venue.", 
+            "request-slots": [
+                "addr", 
+                "phone", 
+                "postcode"
+            ], 
+            "constraints": [
+                [
+                    "food", 
+                    "italian"
+                ], 
+                [
+                    "area", 
+                    "east"
+                ]
+            ]
+        }, 
+        "feedback": {
+            "questionnaire": [
+                [
+                    "The system understood me well.", 
+                    "strongly agree"
+                ]
+            ], 
+            "comments": "none", 
+            "success": true
+        }
+    }, 
+    "session-id": "voip-05e7a5440b-20130328_214746"
+}

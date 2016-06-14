@@ -1,0 +1,228 @@
+{
+    "caller-id": "0fa32b1e78", 
+    "turns": [
+        {
+            "turn-index": 0, 
+            "goal-labels": {}, 
+            "transcription": "system", 
+            "method-label": "none", 
+            "audio-file": "pt344x_0000056_0000132.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [], 
+                "cam": "null()"
+            }
+        }, 
+        {
+            "turn-index": 1, 
+            "goal-labels": {
+                "area": "dontcare"
+            }, 
+            "transcription": "any part", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0001235_0001349.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "area", 
+                                "dontcare"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(area=dontcare)"
+            }
+        }, 
+        {
+            "turn-index": 2, 
+            "goal-labels": {
+                "food": "corsica", 
+                "area": "dontcare"
+            }, 
+            "transcription": "corsica food", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0001658_0001764.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "corsica"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(food=corsica)"
+            }
+        }, 
+        {
+            "turn-index": 3, 
+            "goal-labels": {
+                "food": "vietnamese", 
+                "area": "dontcare"
+            }, 
+            "transcription": "how about vietnamese food", 
+            "method-label": "byalternatives", 
+            "audio-file": "pt344x_0002316_0002480.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "reqalts"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "vietnamese"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "reqalts(food=vietnamese)"
+            }
+        }, 
+        {
+            "turn-index": 4, 
+            "goal-labels": {
+                "food": "vietnamese", 
+                "area": "dontcare"
+            }, 
+            "transcription": "vietnamese food", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0003011_0003140.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "vietnamese"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(food=vietnamese)"
+            }
+        }, 
+        {
+            "turn-index": 5, 
+            "goal-labels": {
+                "food": "vietnamese", 
+                "area": "dontcare"
+            }, 
+            "transcription": "and whats the address", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0003537_0003656.wav", 
+            "requested-slots": [
+                "addr"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "addr"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(addr)"
+            }
+        }, 
+        {
+            "turn-index": 6, 
+            "goal-labels": {
+                "food": "vietnamese", 
+                "area": "dontcare"
+            }, 
+            "transcription": "whats their phone number", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0004163_0004268.wav", 
+            "requested-slots": [
+                "phone"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "phone"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(phone)"
+            }
+        }, 
+        {
+            "turn-index": 7, 
+            "goal-labels": {
+                "food": "vietnamese", 
+                "area": "dontcare"
+            }, 
+            "transcription": "thank you good bye", 
+            "method-label": "finished", 
+            "audio-file": "pt344x_0005007_0005087.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "thankyou"
+                    }, 
+                    {
+                        "slots": [], 
+                        "act": "bye"
+                    }
+                ], 
+                "cam": "thankyou()|bye()"
+            }
+        }
+    ], 
+    "task-information": {
+        "goal": {
+            "text": "Task 06207: You want to find a restaurant in any area and it should serve corsica food. If there is no such venue how about vietnamese type of food. You want to know the address and phone number of the venue.", 
+            "request-slots": [
+                "addr", 
+                "phone"
+            ], 
+            "constraints": [
+                [
+                    "food", 
+                    "vietnamese"
+                ], 
+                [
+                    "area", 
+                    "dontcare"
+                ]
+            ]
+        }, 
+        "feedback": {
+            "questionnaire": [
+                [
+                    "The system understood me well.", 
+                    "agree"
+                ]
+            ], 
+            "comments": null, 
+            "success": true
+        }
+    }, 
+    "session-id": "voip-0fa32b1e78-20130328_153725"
+}

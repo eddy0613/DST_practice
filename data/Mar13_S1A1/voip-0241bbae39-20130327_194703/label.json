@@ -1,0 +1,183 @@
+{
+    "caller-id": "0241bbae39", 
+    "turns": [
+        {
+            "turn-index": 0, 
+            "goal-labels": {
+                "area": "south"
+            }, 
+            "transcription": "im looking for a restaurant in the south part of town", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0001035_0001276.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "area", 
+                                "south"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(area=south,type=restaurant,task=find)"
+            }
+        }, 
+        {
+            "turn-index": 1, 
+            "goal-labels": {
+                "food": "dontcare", 
+                "area": "south"
+            }, 
+            "transcription": "i dont care", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0001610_0001689.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "this", 
+                                "dontcare"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(=dontcare)"
+            }
+        }, 
+        {
+            "turn-index": 2, 
+            "goal-labels": {
+                "food": "dontcare", 
+                "pricerange": "moderate", 
+                "area": "south"
+            }, 
+            "transcription": "moderate", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002249_0002317.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "pricerange", 
+                                "moderate"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(pricerange=moderate)"
+            }
+        }, 
+        {
+            "turn-index": 3, 
+            "goal-labels": {
+                "food": "dontcare", 
+                "pricerange": "moderate", 
+                "area": "south"
+            }, 
+            "transcription": "do you have anything else", 
+            "method-label": "byalternatives", 
+            "audio-file": "pt344x_0003027_0003128.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "reqalts"
+                    }
+                ], 
+                "cam": "reqalts()"
+            }
+        }, 
+        {
+            "turn-index": 4, 
+            "goal-labels": {
+                "food": "dontcare", 
+                "pricerange": "moderate", 
+                "area": "south"
+            }, 
+            "transcription": "can i have the phone number", 
+            "method-label": "byalternatives", 
+            "audio-file": "pt344x_0003926_0004078.wav", 
+            "requested-slots": [
+                "phone"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "phone"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(phone)"
+            }
+        }, 
+        {
+            "turn-index": 5, 
+            "goal-labels": {
+                "food": "dontcare", 
+                "pricerange": "moderate", 
+                "area": "south"
+            }, 
+            "transcription": "thank you good bye", 
+            "method-label": "finished", 
+            "audio-file": "pt344x_0005002_0005139.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "thankyou"
+                    }, 
+                    {
+                        "slots": [], 
+                        "act": "bye"
+                    }
+                ], 
+                "cam": "thankyou()|bye()"
+            }
+        }
+    ], 
+    "task-information": {
+        "goal": {
+            "text": "Task 08718: You are looking for a moderately priced restaurant and it should be in the south part of town. Don't go for the first venue the system offers you, ask if there is anything else. Make sure you get the phone number of the venue.", 
+            "request-slots": [
+                "phone"
+            ], 
+            "constraints": [
+                [
+                    "pricerange", 
+                    "moderate"
+                ], 
+                [
+                    "area", 
+                    "south"
+                ]
+            ]
+        }, 
+        "feedback": {
+            "questionnaire": [
+                [
+                    "The system understood me well.", 
+                    "strongly agree"
+                ]
+            ], 
+            "comments": null, 
+            "success": true
+        }
+    }, 
+    "session-id": "voip-0241bbae39-20130327_194703"
+}

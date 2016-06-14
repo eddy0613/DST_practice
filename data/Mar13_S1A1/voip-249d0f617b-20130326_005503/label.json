@@ -1,0 +1,196 @@
+{
+    "caller-id": "249d0f617b", 
+    "turns": [
+        {
+            "turn-index": 0, 
+            "goal-labels": {
+                "pricerange": "moderate"
+            }, 
+            "transcription": "i would like to find a moderately priced", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0001098_0001299.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "pricerange", 
+                                "moderate"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(pricerange=moderate)"
+            }
+        }, 
+        {
+            "turn-index": 1, 
+            "goal-labels": {
+                "pricerange": "moderate"
+            }, 
+            "transcription": "yes", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0001954_0001991.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "affirm"
+                    }
+                ], 
+                "cam": "affirm()"
+            }
+        }, 
+        {
+            "turn-index": 2, 
+            "goal-labels": {
+                "pricerange": "moderate"
+            }, 
+            "transcription": "moderately", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002707_0002784.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "pricerange", 
+                                "moderate"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(pricerange=moderate)"
+            }
+        }, 
+        {
+            "turn-index": 3, 
+            "goal-labels": {
+                "pricerange": "moderate"
+            }, 
+            "transcription": "yes", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0003440_0003479.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "affirm"
+                    }
+                ], 
+                "cam": "affirm()"
+            }
+        }, 
+        {
+            "turn-index": 4, 
+            "goal-labels": {
+                "pricerange": "moderate", 
+                "area": "east"
+            }, 
+            "transcription": "east", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0003887_0003945.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "area", 
+                                "east"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(area=east)"
+            }
+        }, 
+        {
+            "turn-index": 5, 
+            "goal-labels": {
+                "food": "dontcare", 
+                "pricerange": "moderate", 
+                "area": "east"
+            }, 
+            "transcription": "it doesnt matter", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0004300_0004388.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "this", 
+                                "dontcare"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(=dontcare)"
+            }
+        }, 
+        {
+            "turn-index": 6, 
+            "goal-labels": {
+                "food": "dontcare", 
+                "pricerange": "moderate", 
+                "area": "east"
+            }, 
+            "transcription": "thank you good bye", 
+            "method-label": "finished", 
+            "audio-file": "pt344x_0005112_0005221.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "thankyou"
+                    }, 
+                    {
+                        "slots": [], 
+                        "act": "bye"
+                    }
+                ], 
+                "cam": "thankyou()|bye()"
+            }
+        }
+    ], 
+    "task-information": {
+        "goal": {
+            "text": "Task 05019: You want to find a moderately priced restaurant and it should be in the east part of town. Make sure you get the address of the venue.", 
+            "request-slots": [
+                "addr"
+            ], 
+            "constraints": [
+                [
+                    "pricerange", 
+                    "moderate"
+                ], 
+                [
+                    "area", 
+                    "east"
+                ]
+            ]
+        }, 
+        "feedback": {
+            "questionnaire": [
+                [
+                    "The system understood me well.", 
+                    "agree"
+                ]
+            ], 
+            "comments": null, 
+            "success": true
+        }
+    }, 
+    "session-id": "voip-249d0f617b-20130326_005503"
+}

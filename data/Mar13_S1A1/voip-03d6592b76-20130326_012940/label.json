@@ -1,0 +1,272 @@
+{
+    "caller-id": "03d6592b76", 
+    "turns": [
+        {
+            "turn-index": 0, 
+            "goal-labels": {
+                "food": "turkish"
+            }, 
+            "transcription": "id like a restaurant that serves turkish food", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0000989_0001234.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "turkish"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(type=restaurant,food=turkish)"
+            }
+        }, 
+        {
+            "turn-index": 1, 
+            "goal-labels": {
+                "food": "turkish", 
+                "area": "dontcare"
+            }, 
+            "transcription": "it doesnt matter", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0001638_0001720.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "this", 
+                                "dontcare"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(=dontcare)"
+            }
+        }, 
+        {
+            "turn-index": 2, 
+            "goal-labels": {
+                "food": "turkish", 
+                "area": "dontcare"
+            }, 
+            "transcription": "doesnt matter", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002160_0002240.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "this", 
+                                "dontcare"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(=dontcare)"
+            }
+        }, 
+        {
+            "turn-index": 3, 
+            "goal-labels": {
+                "food": "turkish", 
+                "area": "dontcare"
+            }, 
+            "transcription": "yes", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002699_0002753.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "affirm"
+                    }
+                ], 
+                "cam": "affirm()"
+            }
+        }, 
+        {
+            "turn-index": 4, 
+            "goal-labels": {
+                "food": "turkish", 
+                "pricerange": "dontcare", 
+                "area": "dontcare"
+            }, 
+            "transcription": "any price range", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0003335_0003459.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "pricerange", 
+                                "dontcare"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(pricerange=dontcare)"
+            }
+        }, 
+        {
+            "turn-index": 5, 
+            "goal-labels": {
+                "food": "turkish", 
+                "pricerange": "dontcare", 
+                "area": "dontcare"
+            }, 
+            "transcription": "is there anything else", 
+            "method-label": "byalternatives", 
+            "audio-file": "pt344x_0003957_0004089.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "reqalts"
+                    }
+                ], 
+                "cam": "reqalts()"
+            }
+        }, 
+        {
+            "turn-index": 6, 
+            "goal-labels": {
+                "food": "turkish", 
+                "pricerange": "dontcare", 
+                "area": "dontcare"
+            }, 
+            "transcription": "what is the address and post code", 
+            "method-label": "byalternatives", 
+            "audio-file": "pt344x_0004499_0004842.wav", 
+            "requested-slots": [
+                "addr", 
+                "postcode"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "addr"
+                            ]
+                        ], 
+                        "act": "request"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "postcode"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(addr,postcode)"
+            }
+        }, 
+        {
+            "turn-index": 7, 
+            "goal-labels": {
+                "food": "turkish", 
+                "pricerange": "dontcare", 
+                "area": "dontcare"
+            }, 
+            "transcription": "sil", 
+            "method-label": "byalternatives", 
+            "audio-file": "pt344x_0005116_0005168.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [], 
+                "cam": "null()"
+            }
+        }, 
+        {
+            "turn-index": 8, 
+            "goal-labels": {
+                "food": "turkish", 
+                "pricerange": "dontcare", 
+                "area": "dontcare"
+            }, 
+            "transcription": "hello hello oh your on the phone yea", 
+            "method-label": "byalternatives", 
+            "audio-file": "pt344x_0005528_0005955.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "hello"
+                    }
+                ], 
+                "cam": "hello()"
+            }
+        }, 
+        {
+            "turn-index": 9, 
+            "goal-labels": {
+                "food": "turkish", 
+                "pricerange": "dontcare", 
+                "area": "dontcare"
+            }, 
+            "transcription": "good bye", 
+            "method-label": "finished", 
+            "audio-file": "pt344x_0006597_0006639.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "bye"
+                    }
+                ], 
+                "cam": "bye()"
+            }
+        }
+    ], 
+    "task-information": {
+        "goal": {
+            "text": "Task 07104: You want to find and it should serve turkish food. You don't care about the price range. Don't go for the first venue the system offers you, ask if there is anything else. Make sure you get the address and postcode.", 
+            "request-slots": [
+                "addr", 
+                "postcode"
+            ], 
+            "constraints": [
+                [
+                    "food", 
+                    "turkish"
+                ], 
+                [
+                    "pricerange", 
+                    "dontcare"
+                ]
+            ]
+        }, 
+        "feedback": {
+            "questionnaire": [
+                [
+                    "The system understood me well.", 
+                    "strongly agree"
+                ]
+            ], 
+            "comments": null, 
+            "success": true
+        }
+    }, 
+    "session-id": "voip-03d6592b76-20130326_012940"
+}

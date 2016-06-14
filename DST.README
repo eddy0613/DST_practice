@@ -1,0 +1,77 @@
+Dialogue State Tracker implementation
+
+Author: Pei-Hao (Eddy) Su  (Copyright CUED Dialogue Systems Group 2015)
+Mail  : phs26@cam.ac.uk
+
+*** Directory and files ***
+
+practical1_dst/
+    data/                  # data used in DSTC2
+    scripts/
+        baseline.py        # starter code
+            score.py       # generate output result
+            check_track.py # check output validity
+            report.py      # report scores
+            misc.py        # useful tools
+            config/
+               dstc2_data.flist     # partial dstc2 data list
+               ontology_dstc2.json  # ontology
+
+*** Running and evaluating the trackers ***
+
+Under the directory: 
+    cued-python_practical/practical1_dst/
+
+- run baseline tracker:
+
+python scripts/baseline.py --dataset dstc2_data --dataroot data --trackfile baseline.json
+
+- run focus tracker as you implement:
+
+python scripts/baseline.py --dataset dstc2_data --dataroot data --trackfile baseline.json --focus True
+
+This will create a file baseline.json with a tracker output object. 
+
+
+
+- The evaluation script, score.py can be run on the tracker output as:
+
+python scripts/score.py --dataset dstc2_data --dataroot data --trackfile baseline.json --ontology scripts/config/ontology_dstc2.json --scorefile baseline.score.csv
+
+This creates a file baseline.score.csv which lists all the metrics interested.
+
+
+
+- Lastly use report.py to format the results:
+
+python scripts/report.py --scorefile baseline.score.csv
+
+This prints out several tables, including the featured metrics table. 
+The following table is the result of baseline tracker.
+
+                                    featured metrics
+--------------------------------------------------------------------
+              |   Joint Goals   |    Requested    |      Method    |
+--------------------------------------------------------------------
+Accuracy      |    0.5686546    |    0.9162437    |    0.8529820   |
+l2            |    0.8344502    |    0.1204444    |    0.2560611   |
+roc.v2_ca05   |    0.0000000    |    0.6066482    |    0.0016260   |
+
+
+and the initial result of focus tracker (before implementation):
+
+                                    featured metrics
+--------------------------------------------------------------------
+              |   Joint Goals   |    Requested    |      Method    |
+--------------------------------------------------------------------
+Accuracy      |    0.0097087    |    0.9365482    |    0.0000000   |
+l2            |    1.9805825    |    0.0922728    |    2.0000000   |
+roc.v2_ca05   |    0.0000000    |    0.0027100    |        -       |
+
+*** Question ***
+
+Complete the focus dialogue state tracker and compare its performance with the baseline tracker on the provided partial DSTC2 dataset (show only the featured metrics result).
+Show up to 20 lines of the code relating to the parameter update of the focus tracker.
+
+Please implement in the starter code: baseline.py, where section TODO is labelled.
+

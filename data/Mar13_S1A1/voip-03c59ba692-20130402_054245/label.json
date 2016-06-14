@@ -1,0 +1,134 @@
+{
+    "caller-id": "03c59ba692", 
+    "turns": [
+        {
+            "turn-index": 0, 
+            "goal-labels": {
+                "area": "east"
+            }, 
+            "transcription": "looking for a restaurant in the east part of town", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0000916_0001171.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "area", 
+                                "east"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(type=restaurant,area=east)"
+            }
+        }, 
+        {
+            "turn-index": 1, 
+            "goal-labels": {
+                "area": "east"
+            }, 
+            "transcription": "whats the address", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0001798_0001879.wav", 
+            "requested-slots": [
+                "addr"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "addr"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(addr)"
+            }
+        }, 
+        {
+            "turn-index": 2, 
+            "goal-labels": {
+                "area": "east"
+            }, 
+            "transcription": "and the post code", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002400_0002490.wav", 
+            "requested-slots": [
+                "postcode"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "postcode"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(postcode)"
+            }
+        }, 
+        {
+            "turn-index": 3, 
+            "goal-labels": {
+                "area": "east"
+            }, 
+            "transcription": "thank you goodbye", 
+            "method-label": "finished", 
+            "audio-file": "pt344x_0003100_0003188.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "thankyou"
+                    }, 
+                    {
+                        "slots": [], 
+                        "act": "bye"
+                    }
+                ], 
+                "cam": "thankyou()|bye()"
+            }
+        }
+    ], 
+    "task-information": {
+        "goal": {
+            "text": "Task 02355: You want to find a cheap restaurant and it should be in the east part of town. Make sure you get the address and postcode of the venue.", 
+            "request-slots": [
+                "addr", 
+                "postcode"
+            ], 
+            "constraints": [
+                [
+                    "pricerange", 
+                    "cheap"
+                ], 
+                [
+                    "area", 
+                    "east"
+                ]
+            ]
+        }, 
+        "feedback": {
+            "questionnaire": [
+                [
+                    "The system understood me well.", 
+                    "strongly agree"
+                ]
+            ], 
+            "comments": null, 
+            "success": true
+        }
+    }, 
+    "session-id": "voip-03c59ba692-20130402_054245"
+}

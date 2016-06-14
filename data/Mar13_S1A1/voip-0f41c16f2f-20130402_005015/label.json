@@ -1,0 +1,211 @@
+{
+    "caller-id": "0f41c16f2f", 
+    "turns": [
+        {
+            "turn-index": 0, 
+            "goal-labels": {
+                "pricerange": "expensive"
+            }, 
+            "transcription": "expensive restaurant", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0000960_0001113.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "pricerange", 
+                                "expensive"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(pricerange=expensive,type=restaurant)"
+            }
+        }, 
+        {
+            "turn-index": 1, 
+            "goal-labels": {
+                "pricerange": "expensive", 
+                "area": "south"
+            }, 
+            "transcription": "south", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0001535_0001571.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "area", 
+                                "south"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(area=south)"
+            }
+        }, 
+        {
+            "turn-index": 2, 
+            "goal-labels": {
+                "pricerange": "expensive", 
+                "area": "south"
+            }, 
+            "transcription": "yea", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002091_0002128.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "affirm"
+                    }
+                ], 
+                "cam": "affirm()"
+            }
+        }, 
+        {
+            "turn-index": 3, 
+            "goal-labels": {
+                "food": "dontcare", 
+                "pricerange": "expensive", 
+                "area": "south"
+            }, 
+            "transcription": "any time", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002487_0002596.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "this", 
+                                "dontcare"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(=dontcare)"
+            }
+        }, 
+        {
+            "turn-index": 4, 
+            "goal-labels": {
+                "food": "dontcare", 
+                "pricerange": "expensive", 
+                "area": "south"
+            }, 
+            "transcription": "whats the phone number", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0003362_0003447.wav", 
+            "requested-slots": [
+                "phone"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "phone"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(phone)"
+            }
+        }, 
+        {
+            "turn-index": 5, 
+            "goal-labels": {
+                "food": "dontcare", 
+                "pricerange": "expensive", 
+                "area": "south"
+            }, 
+            "transcription": "whats the post code", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0004330_0004503.wav", 
+            "requested-slots": [
+                "postcode"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "postcode"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(postcode)"
+            }
+        }, 
+        {
+            "turn-index": 6, 
+            "goal-labels": {
+                "food": "dontcare", 
+                "pricerange": "expensive", 
+                "area": "south"
+            }, 
+            "transcription": "thank you good bye", 
+            "method-label": "finished", 
+            "audio-file": "pt344x_0005140_0005266.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "thankyou"
+                    }, 
+                    {
+                        "slots": [], 
+                        "act": "bye"
+                    }
+                ], 
+                "cam": "thankyou()|bye()"
+            }
+        }
+    ], 
+    "task-information": {
+        "goal": {
+            "text": "Task 10041: You want to find an expensive restaurant and it should be in the south part of town. Make sure you get the phone number and postcode of the venue.", 
+            "request-slots": [
+                "phone", 
+                "postcode"
+            ], 
+            "constraints": [
+                [
+                    "pricerange", 
+                    "expensive"
+                ], 
+                [
+                    "area", 
+                    "south"
+                ]
+            ]
+        }, 
+        "feedback": {
+            "questionnaire": [
+                [
+                    "The system understood me well.", 
+                    "agree"
+                ]
+            ], 
+            "comments": null, 
+            "success": true
+        }
+    }, 
+    "session-id": "voip-0f41c16f2f-20130402_005015"
+}

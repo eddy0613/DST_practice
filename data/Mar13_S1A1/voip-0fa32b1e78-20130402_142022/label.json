@@ -1,0 +1,201 @@
+{
+    "caller-id": "0fa32b1e78", 
+    "turns": [
+        {
+            "turn-index": 0, 
+            "goal-labels": {
+                "food": "austrian", 
+                "pricerange": "cheap"
+            }, 
+            "transcription": "im looking for a cheap restaurant that serves austrian food", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0000937_0001254.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "austrian"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "pricerange", 
+                                "cheap"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(food=austrian,pricerange=cheap,type=restaurant,task=find)"
+            }
+        }, 
+        {
+            "turn-index": 1, 
+            "goal-labels": {
+                "food": "portuguese", 
+                "pricerange": "cheap"
+            }, 
+            "transcription": "how about portuguese food", 
+            "method-label": "byalternatives", 
+            "audio-file": "pt344x_0001752_0001888.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "reqalts"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "portuguese"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "reqalts(food=portuguese)"
+            }
+        }, 
+        {
+            "turn-index": 2, 
+            "goal-labels": {
+                "food": "portuguese", 
+                "pricerange": "cheap"
+            }, 
+            "transcription": "portuguese", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002370_0002469.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "portuguese"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(food=portuguese)"
+            }
+        }, 
+        {
+            "turn-index": 3, 
+            "goal-labels": {
+                "food": "portuguese", 
+                "pricerange": "cheap", 
+                "area": "dontcare"
+            }, 
+            "transcription": "i dont care", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002817_0002874.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "this", 
+                                "dontcare"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(=dontcare)"
+            }
+        }, 
+        {
+            "turn-index": 4, 
+            "goal-labels": {
+                "food": "portuguese", 
+                "pricerange": "cheap", 
+                "area": "dontcare"
+            }, 
+            "transcription": "whats their address", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0003318_0003422.wav", 
+            "requested-slots": [
+                "addr"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "addr"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(addr)"
+            }
+        }, 
+        {
+            "turn-index": 5, 
+            "goal-labels": {
+                "food": "portuguese", 
+                "pricerange": "cheap", 
+                "area": "dontcare"
+            }, 
+            "transcription": "thank you good bye", 
+            "method-label": "finished", 
+            "audio-file": "pt344x_0003913_0003991.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "thankyou"
+                    }, 
+                    {
+                        "slots": [], 
+                        "act": "bye"
+                    }
+                ], 
+                "cam": "thankyou()|bye()"
+            }
+        }
+    ], 
+    "task-information": {
+        "goal": {
+            "text": "Task 10764: You want to find a cheap restaurant and it should serve austrian food. If there is no such venue how about portuguese type of food. You want to know the address.", 
+            "request-slots": [
+                "addr"
+            ], 
+            "constraints": [
+                [
+                    "food", 
+                    "portuguese"
+                ], 
+                [
+                    "pricerange", 
+                    "cheap"
+                ]
+            ]
+        }, 
+        "feedback": {
+            "questionnaire": [
+                [
+                    "The system understood me well.", 
+                    "agree"
+                ]
+            ], 
+            "comments": null, 
+            "success": true
+        }
+    }, 
+    "session-id": "voip-0fa32b1e78-20130402_142022"
+}

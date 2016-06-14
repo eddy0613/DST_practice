@@ -1,0 +1,233 @@
+{
+    "caller-id": "0f41c16f2f", 
+    "turns": [
+        {
+            "turn-index": 0, 
+            "goal-labels": {
+                "food": "thai"
+            }, 
+            "transcription": "thai food", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0000962_0001117.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "thai"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(food=thai)"
+            }
+        }, 
+        {
+            "turn-index": 1, 
+            "goal-labels": {
+                "food": "thai", 
+                "area": "centre"
+            }, 
+            "transcription": "center", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0001502_0001682.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "area", 
+                                "centre"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(area=centre)"
+            }
+        }, 
+        {
+            "turn-index": 2, 
+            "goal-labels": {
+                "food": "thai", 
+                "area": "centre"
+            }, 
+            "transcription": "yes", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002164_0002368.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "affirm"
+                    }
+                ], 
+                "cam": "affirm()"
+            }
+        }, 
+        {
+            "turn-index": 3, 
+            "goal-labels": {
+                "food": "thai", 
+                "area": "centre"
+            }, 
+            "transcription": "noise", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002613_0002702.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [], 
+                "cam": "null()"
+            }
+        }, 
+        {
+            "turn-index": 4, 
+            "goal-labels": {
+                "food": "thai", 
+                "area": "centre"
+            }, 
+            "transcription": "noise", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002767_0002790.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [], 
+                "cam": "null()"
+            }
+        }, 
+        {
+            "turn-index": 5, 
+            "goal-labels": {
+                "food": "thai", 
+                "area": "centre"
+            }, 
+            "transcription": "whats the address phone number and price", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0003634_0003938.wav", 
+            "requested-slots": [
+                "phone", 
+                "pricerange", 
+                "addr"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "addr"
+                            ]
+                        ], 
+                        "act": "request"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "phone"
+                            ]
+                        ], 
+                        "act": "request"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "pricerange"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(addr,phone,pricerange)"
+            }
+        }, 
+        {
+            "turn-index": 6, 
+            "goal-labels": {
+                "food": "thai", 
+                "area": "centre"
+            }, 
+            "transcription": "whats the price range", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0005184_0005322.wav", 
+            "requested-slots": [
+                "pricerange"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "pricerange"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(pricerange)"
+            }
+        }, 
+        {
+            "turn-index": 7, 
+            "goal-labels": {
+                "food": "thai", 
+                "area": "centre"
+            }, 
+            "transcription": "thank you good bye", 
+            "method-label": "finished", 
+            "audio-file": "pt344x_0005887_0006016.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "thankyou"
+                    }, 
+                    {
+                        "slots": [], 
+                        "act": "bye"
+                    }
+                ], 
+                "cam": "thankyou()|bye()"
+            }
+        }
+    ], 
+    "task-information": {
+        "goal": {
+            "text": "Task 01782: You want to find a restaurant in the centre and it should serve thai food. Make sure you get the address, phone number, and price range.", 
+            "request-slots": [
+                "addr", 
+                "phone", 
+                "pricerange"
+            ], 
+            "constraints": [
+                [
+                    "food", 
+                    "thai"
+                ], 
+                [
+                    "area", 
+                    "centre"
+                ]
+            ]
+        }, 
+        "feedback": {
+            "questionnaire": [
+                [
+                    "The system understood me well.", 
+                    "strongly agree"
+                ]
+            ], 
+            "comments": null, 
+            "success": true
+        }
+    }, 
+    "session-id": "voip-0f41c16f2f-20130401_235017"
+}

@@ -1,0 +1,217 @@
+{
+    "caller-id": "0a45bc863d", 
+    "turns": [
+        {
+            "turn-index": 0, 
+            "goal-labels": {
+                "pricerange": "expensive"
+            }, 
+            "transcription": "expensive", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0000948_0001038.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "pricerange", 
+                                "expensive"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(pricerange=expensive)"
+            }
+        }, 
+        {
+            "turn-index": 1, 
+            "goal-labels": {
+                "pricerange": "expensive", 
+                "area": "dontcare"
+            }, 
+            "transcription": "dont care", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0001456_0001524.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "this", 
+                                "dontcare"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(=dontcare)"
+            }
+        }, 
+        {
+            "turn-index": 2, 
+            "goal-labels": {
+                "food": "malaysian", 
+                "pricerange": "expensive", 
+                "area": "dontcare"
+            }, 
+            "transcription": "malaysian", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0001854_0001942.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "malaysian"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(food=malaysian)"
+            }
+        }, 
+        {
+            "turn-index": 3, 
+            "goal-labels": {
+                "food": "korean", 
+                "pricerange": "expensive", 
+                "area": "dontcare"
+            }, 
+            "transcription": "korean", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002472_0002561.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "korean"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(food=korean)"
+            }
+        }, 
+        {
+            "turn-index": 4, 
+            "goal-labels": {
+                "food": "korean", 
+                "pricerange": "expensive", 
+                "area": "dontcare"
+            }, 
+            "transcription": "what part of town", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0003136_0003252.wav", 
+            "requested-slots": [
+                "area"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "area"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(area)"
+            }
+        }, 
+        {
+            "turn-index": 5, 
+            "goal-labels": {
+                "food": "korean", 
+                "pricerange": "expensive", 
+                "area": "dontcare"
+            }, 
+            "transcription": "what is the address", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0003747_0003919.wav", 
+            "requested-slots": [
+                "addr"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "addr"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(addr)"
+            }
+        }, 
+        {
+            "turn-index": 6, 
+            "goal-labels": {
+                "food": "korean", 
+                "pricerange": "expensive", 
+                "area": "dontcare"
+            }, 
+            "transcription": "thank you good bye", 
+            "method-label": "finished", 
+            "audio-file": "pt344x_0004602_0004699.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "thankyou"
+                    }, 
+                    {
+                        "slots": [], 
+                        "act": "bye"
+                    }
+                ], 
+                "cam": "thankyou()|bye()"
+            }
+        }
+    ], 
+    "task-information": {
+        "goal": {
+            "text": "Task 06393: You are looking for an expensive restaurant and it should serve malaysian food. If there is no such venue how about korean type of food. You want to know the address and area.", 
+            "request-slots": [
+                "addr", 
+                "area"
+            ], 
+            "constraints": [
+                [
+                    "food", 
+                    "korean"
+                ], 
+                [
+                    "pricerange", 
+                    "expensive"
+                ]
+            ]
+        }, 
+        "feedback": {
+            "questionnaire": [
+                [
+                    "The system understood me well.", 
+                    "agree"
+                ]
+            ], 
+            "comments": null, 
+            "success": true
+        }
+    }, 
+    "session-id": "voip-0a45bc863d-20130326_204718"
+}

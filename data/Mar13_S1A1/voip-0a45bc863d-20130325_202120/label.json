@@ -1,0 +1,225 @@
+{
+    "caller-id": "0a45bc863d", 
+    "turns": [
+        {
+            "turn-index": 0, 
+            "goal-labels": {
+                "food": "belgian"
+            }, 
+            "transcription": "belgium food", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0000970_0001076.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "belgian"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(type=restaurant,food=belgian)"
+            }
+        }, 
+        {
+            "turn-index": 1, 
+            "goal-labels": {
+                "food": "belgian"
+            }, 
+            "transcription": "no belgium", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0001497_0001647.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "negate"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "belgian"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "negate(food=belgian)"
+            }
+        }, 
+        {
+            "turn-index": 2, 
+            "goal-labels": {
+                "food": "british"
+            }, 
+            "transcription": "british", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002183_0002260.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "british"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(food=british)"
+            }
+        }, 
+        {
+            "turn-index": 3, 
+            "goal-labels": {
+                "food": "british", 
+                "area": "centre"
+            }, 
+            "transcription": "center", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002655_0002716.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "area", 
+                                "centre"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(area=centre)"
+            }
+        }, 
+        {
+            "turn-index": 4, 
+            "goal-labels": {
+                "food": "british", 
+                "pricerange": "dontcare", 
+                "area": "centre"
+            }, 
+            "transcription": "dont care", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0003298_0003368.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "this", 
+                                "dontcare"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(=dontcare)"
+            }
+        }, 
+        {
+            "turn-index": 5, 
+            "goal-labels": {
+                "food": "british", 
+                "pricerange": "dontcare", 
+                "area": "centre"
+            }, 
+            "transcription": "what is the address and phone number", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0004029_0004242.wav", 
+            "requested-slots": [
+                "phone", 
+                "addr"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "addr"
+                            ]
+                        ], 
+                        "act": "request"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "phone"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(addr,phone)"
+            }
+        }, 
+        {
+            "turn-index": 6, 
+            "goal-labels": {
+                "food": "british", 
+                "pricerange": "dontcare", 
+                "area": "centre"
+            }, 
+            "transcription": "thank you good bye", 
+            "method-label": "finished", 
+            "audio-file": "pt344x_0005313_0005416.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "thankyou"
+                    }, 
+                    {
+                        "slots": [], 
+                        "act": "bye"
+                    }
+                ], 
+                "cam": "thankyou()|bye()"
+            }
+        }
+    ], 
+    "task-information": {
+        "goal": {
+            "text": "Task 07395: You want to find a restaurant in the centre and it should serve belgian food. If there is no such venue how about british type of food. Make sure you get the address and phone number.", 
+            "request-slots": [
+                "addr", 
+                "phone"
+            ], 
+            "constraints": [
+                [
+                    "food", 
+                    "british"
+                ], 
+                [
+                    "area", 
+                    "centre"
+                ]
+            ]
+        }, 
+        "feedback": {
+            "questionnaire": [
+                [
+                    "The system understood me well.", 
+                    "agree"
+                ]
+            ], 
+            "comments": null, 
+            "success": true
+        }
+    }, 
+    "session-id": "voip-0a45bc863d-20130325_202120"
+}

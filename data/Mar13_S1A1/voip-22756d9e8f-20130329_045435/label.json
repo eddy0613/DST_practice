@@ -1,0 +1,212 @@
+{
+    "caller-id": "22756d9e8f", 
+    "turns": [
+        {
+            "turn-index": 0, 
+            "goal-labels": {}, 
+            "transcription": "i am", 
+            "method-label": "none", 
+            "audio-file": "pt344x_0001257_0001298.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [], 
+                "cam": "null()"
+            }
+        }, 
+        {
+            "turn-index": 1, 
+            "goal-labels": {
+                "pricerange": "moderate"
+            }, 
+            "transcription": "i am looking for a moderate priced restaurant", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0001717_0002005.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "pricerange", 
+                                "moderate"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(type=restaurant,pricerange=moderate,task=find)"
+            }
+        }, 
+        {
+            "turn-index": 2, 
+            "goal-labels": {
+                "food": "chinese", 
+                "pricerange": "moderate"
+            }, 
+            "transcription": "that serves chinese food", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002041_0002211.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "chinese"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(food=chinese)"
+            }
+        }, 
+        {
+            "turn-index": 3, 
+            "goal-labels": {
+                "food": "chinese", 
+                "pricerange": "moderate"
+            }, 
+            "transcription": "may i have the address", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002808_0002974.wav", 
+            "requested-slots": [
+                "addr"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "addr"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(addr)"
+            }
+        }, 
+        {
+            "turn-index": 4, 
+            "goal-labels": {
+                "food": "chinese", 
+                "pricerange": "moderate"
+            }, 
+            "transcription": "phone number and post code", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0003015_0003189.wav", 
+            "requested-slots": [
+                "phone", 
+                "postcode"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "phone"
+                            ]
+                        ], 
+                        "act": "request"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "postcode"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(phone,postcode)"
+            }
+        }, 
+        {
+            "turn-index": 5, 
+            "goal-labels": {
+                "food": "chinese", 
+                "pricerange": "moderate"
+            }, 
+            "transcription": "may i have the address", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0004304_0004420.wav", 
+            "requested-slots": [
+                "addr"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "addr"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(addr)"
+            }
+        }, 
+        {
+            "turn-index": 6, 
+            "goal-labels": {
+                "food": "chinese", 
+                "pricerange": "moderate"
+            }, 
+            "transcription": "thank you good bye", 
+            "method-label": "finished", 
+            "audio-file": "pt344x_0005348_0005449.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "thankyou"
+                    }, 
+                    {
+                        "slots": [], 
+                        "act": "bye"
+                    }
+                ], 
+                "cam": "thankyou()|bye()"
+            }
+        }
+    ], 
+    "task-information": {
+        "goal": {
+            "text": "Task 06252: You are looking for a moderately priced restaurant and it should serve chinese food. Make sure you get the address, phone number, and postcode.", 
+            "request-slots": [
+                "addr", 
+                "phone", 
+                "postcode"
+            ], 
+            "constraints": [
+                [
+                    "food", 
+                    "chinese"
+                ], 
+                [
+                    "pricerange", 
+                    "moderate"
+                ]
+            ]
+        }, 
+        "feedback": {
+            "questionnaire": [
+                [
+                    "The system understood me well.", 
+                    "agree"
+                ]
+            ], 
+            "comments": null, 
+            "success": true
+        }
+    }, 
+    "session-id": "voip-22756d9e8f-20130329_045435"
+}

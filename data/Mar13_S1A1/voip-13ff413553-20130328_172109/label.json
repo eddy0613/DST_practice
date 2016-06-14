@@ -1,0 +1,286 @@
+{
+    "caller-id": "13ff413553", 
+    "turns": [
+        {
+            "turn-index": 0, 
+            "goal-labels": {
+                "pricerange": "moderate"
+            }, 
+            "transcription": "moderately priced restaurant", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0000956_0001127.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "pricerange", 
+                                "moderate"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(pricerange=moderate,type=restaurant)"
+            }
+        }, 
+        {
+            "turn-index": 1, 
+            "goal-labels": {
+                "pricerange": "moderate", 
+                "area": "north"
+            }, 
+            "transcription": "north", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0001519_0001551.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "area", 
+                                "north"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(area=north)"
+            }
+        }, 
+        {
+            "turn-index": 2, 
+            "goal-labels": {
+                "pricerange": "moderate", 
+                "area": "north"
+            }, 
+            "transcription": "no north", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002080_0002154.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "negate"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "area", 
+                                "north"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "negate(area=north)"
+            }
+        }, 
+        {
+            "turn-index": 3, 
+            "goal-labels": {
+                "food": "dontcare", 
+                "pricerange": "moderate", 
+                "area": "north"
+            }, 
+            "transcription": "any", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002503_0002538.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "this", 
+                                "dontcare"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(=dontcare)"
+            }
+        }, 
+        {
+            "turn-index": 4, 
+            "goal-labels": {
+                "food": "north american", 
+                "pricerange": "moderate", 
+                "area": "north"
+            }, 
+            "transcription": "american", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002917_0002974.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "north american"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(food=\"north american\")"
+            }
+        }, 
+        {
+            "turn-index": 5, 
+            "goal-labels": {
+                "food": "north american", 
+                "pricerange": "moderate", 
+                "area": "north"
+            }, 
+            "transcription": "is there anything else", 
+            "method-label": "byalternatives", 
+            "audio-file": "pt344x_0003671_0003751.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "reqalts"
+                    }
+                ], 
+                "cam": "reqalts()"
+            }
+        }, 
+        {
+            "turn-index": 6, 
+            "goal-labels": {
+                "food": "north american", 
+                "pricerange": "moderate", 
+                "area": "north"
+            }, 
+            "transcription": "phone number", 
+            "method-label": "byalternatives", 
+            "audio-file": "pt344x_0004408_0004458.wav", 
+            "requested-slots": [
+                "phone"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "phone"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(phone)"
+            }
+        }, 
+        {
+            "turn-index": 7, 
+            "goal-labels": {
+                "food": "north american", 
+                "pricerange": "moderate", 
+                "area": "north"
+            }, 
+            "transcription": "can i get the phone number", 
+            "method-label": "byalternatives", 
+            "audio-file": "pt344x_0004915_0005005.wav", 
+            "requested-slots": [
+                "phone"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "phone"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(phone)"
+            }
+        }, 
+        {
+            "turn-index": 8, 
+            "goal-labels": {
+                "food": "north american", 
+                "pricerange": "moderate", 
+                "area": "north"
+            }, 
+            "transcription": "the address", 
+            "method-label": "byalternatives", 
+            "audio-file": "pt344x_0005815_0005875.wav", 
+            "requested-slots": [
+                "addr"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "addr"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(addr)"
+            }
+        }, 
+        {
+            "turn-index": 9, 
+            "goal-labels": {
+                "food": "north american", 
+                "pricerange": "moderate", 
+                "area": "north"
+            }, 
+            "transcription": "who is it by", 
+            "method-label": "byalternatives", 
+            "audio-file": "pt344x_0006501_0006556.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [], 
+                "cam": "null()"
+            }
+        }
+    ], 
+    "task-information": {
+        "goal": {
+            "text": "Task 04758: You are looking for a moderately priced restaurant and it should be in the north part of town. Don't go for the first venue the system offers you, ask if there is anything else. You want to know the phone number and address.", 
+            "request-slots": [
+                "phone", 
+                "addr"
+            ], 
+            "constraints": [
+                [
+                    "pricerange", 
+                    "moderate"
+                ], 
+                [
+                    "area", 
+                    "north"
+                ]
+            ]
+        }, 
+        "feedback": {
+            "questionnaire": [
+                [
+                    "The system understood me well.", 
+                    "slightly agree"
+                ]
+            ], 
+            "comments": null, 
+            "success": true
+        }
+    }, 
+    "session-id": "voip-13ff413553-20130328_172109"
+}

@@ -1,0 +1,253 @@
+{
+    "caller-id": "03c2655d43", 
+    "turns": [
+        {
+            "turn-index": 0, 
+            "goal-labels": {
+                "area": "west"
+            }, 
+            "transcription": "restaurant in west part of town", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0000948_0001183.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "area", 
+                                "west"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(type=restaurant,area=west)"
+            }
+        }, 
+        {
+            "turn-index": 1, 
+            "goal-labels": {
+                "food": "swiss", 
+                "area": "west"
+            }, 
+            "transcription": "shit served swiss food", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0001249_0001438.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "swiss"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(food=swiss)"
+            }
+        }, 
+        {
+            "turn-index": 2, 
+            "goal-labels": {
+                "food": "vietnamese", 
+                "area": "west"
+            }, 
+            "transcription": "vietnamese food", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0001984_0002111.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "vietnamese"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(food=vietnamese)"
+            }
+        }, 
+        {
+            "turn-index": 3, 
+            "goal-labels": {
+                "food": "vietnamese", 
+                "area": "west"
+            }, 
+            "transcription": "vietnamese", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002668_0002822.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "vietnamese"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(food=vietnamese)"
+            }
+        }, 
+        {
+            "turn-index": 4, 
+            "goal-labels": {
+                "food": "vietnamese", 
+                "area": "west"
+            }, 
+            "transcription": "viet", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0003719_0003780.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [], 
+                "cam": "null()"
+            }
+        }, 
+        {
+            "turn-index": 5, 
+            "goal-labels": {
+                "food": "vietnamese", 
+                "area": "west"
+            }, 
+            "transcription": "address and", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0004652_0004736.wav", 
+            "requested-slots": [
+                "addr"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "addr"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(addr)"
+            }
+        }, 
+        {
+            "turn-index": 6, 
+            "goal-labels": {
+                "food": "vietnamese", 
+                "area": "west"
+            }, 
+            "transcription": "post code", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0004779_0004837.wav", 
+            "requested-slots": [
+                "postcode"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "postcode"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(postcode)"
+            }
+        }, 
+        {
+            "turn-index": 7, 
+            "goal-labels": {
+                "food": "vietnamese", 
+                "area": "west"
+            }, 
+            "transcription": "phone number", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0005533_0005588.wav", 
+            "requested-slots": [
+                "phone"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "phone"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(phone)"
+            }
+        }, 
+        {
+            "turn-index": 8, 
+            "goal-labels": {
+                "food": "vietnamese", 
+                "area": "west"
+            }, 
+            "transcription": "thank you good bye", 
+            "method-label": "finished", 
+            "audio-file": "pt344x_0006602_0006795.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "thankyou"
+                    }, 
+                    {
+                        "slots": [], 
+                        "act": "bye"
+                    }
+                ], 
+                "cam": "thankyou()|bye()"
+            }
+        }
+    ], 
+    "task-information": {
+        "goal": {
+            "text": "Task 01278: You are looking for a restaurant in the west part of town and it should serve swiss food. If there is no such venue how about vietnamese type of food. Make sure you get the phone number of the venue.", 
+            "request-slots": [
+                "phone"
+            ], 
+            "constraints": [
+                [
+                    "food", 
+                    "vietnamese"
+                ], 
+                [
+                    "area", 
+                    "west"
+                ]
+            ]
+        }, 
+        "feedback": {
+            "questionnaire": [
+                [
+                    "The system understood me well.", 
+                    "slightly disagree"
+                ]
+            ], 
+            "comments": null, 
+            "success": true
+        }
+    }, 
+    "session-id": "voip-03c2655d43-20130327_192312"
+}

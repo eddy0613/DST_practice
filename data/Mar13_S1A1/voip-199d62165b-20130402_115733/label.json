@@ -1,0 +1,163 @@
+{
+    "caller-id": "199d62165b", 
+    "turns": [
+        {
+            "turn-index": 0, 
+            "goal-labels": {
+                "pricerange": "moderate"
+            }, 
+            "transcription": "i am looking for a moderately priced restaurant and it should", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0000897_0001297.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "pricerange", 
+                                "moderate"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(type=restaurant,pricerange=moderate,task=find)"
+            }
+        }, 
+        {
+            "turn-index": 1, 
+            "goal-labels": {
+                "food": "moroccan", 
+                "pricerange": "moderate"
+            }, 
+            "transcription": "it should serve moroccan food", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0001729_0001950.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "moroccan"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(food=moroccan)"
+            }
+        }, 
+        {
+            "turn-index": 2, 
+            "goal-labels": {
+                "food": "turkish", 
+                "pricerange": "moderate"
+            }, 
+            "transcription": "how about turkish type of food", 
+            "method-label": "byalternatives", 
+            "audio-file": "pt344x_0002469_0002676.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "reqalts"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "turkish"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "reqalts(food=turkish)"
+            }
+        }, 
+        {
+            "turn-index": 3, 
+            "goal-labels": {
+                "food": "turkish", 
+                "pricerange": "moderate"
+            }, 
+            "transcription": "may i have the address of the venue", 
+            "method-label": "byalternatives", 
+            "audio-file": "pt344x_0003218_0003389.wav", 
+            "requested-slots": [
+                "addr"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "addr"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(addr)"
+            }
+        }, 
+        {
+            "turn-index": 4, 
+            "goal-labels": {
+                "food": "turkish", 
+                "pricerange": "moderate"
+            }, 
+            "transcription": "thank you good bye", 
+            "method-label": "finished", 
+            "audio-file": "pt344x_0004099_0004203.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "thankyou"
+                    }, 
+                    {
+                        "slots": [], 
+                        "act": "bye"
+                    }
+                ], 
+                "cam": "thankyou()|bye()"
+            }
+        }
+    ], 
+    "task-information": {
+        "goal": {
+            "text": "Task 00738: You are looking for a moderately priced restaurant and it should serve moroccan food. If there is no such venue how about turkish type of food. You want to know the address of the venue.", 
+            "request-slots": [
+                "addr"
+            ], 
+            "constraints": [
+                [
+                    "food", 
+                    "turkish"
+                ], 
+                [
+                    "pricerange", 
+                    "moderate"
+                ]
+            ]
+        }, 
+        "feedback": {
+            "questionnaire": [
+                [
+                    "The system understood me well.", 
+                    "agree"
+                ]
+            ], 
+            "comments": null, 
+            "success": true
+        }
+    }, 
+    "session-id": "voip-199d62165b-20130402_115733"
+}

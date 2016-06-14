@@ -1,0 +1,204 @@
+{
+    "caller-id": "14cb91bc48", 
+    "turns": [
+        {
+            "turn-index": 0, 
+            "goal-labels": {
+                "pricerange": "cheap", 
+                "area": "south"
+            }, 
+            "transcription": "can i get a cheap restaurant in the south part of town", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0000870_0001169.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "pricerange", 
+                                "cheap"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "area", 
+                                "south"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(pricerange=cheap,type=restaurant,area=south)"
+            }
+        }, 
+        {
+            "turn-index": 1, 
+            "goal-labels": {
+                "food": "dontcare", 
+                "pricerange": "cheap", 
+                "area": "south"
+            }, 
+            "transcription": "any", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0001654_0001682.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "this", 
+                                "dontcare"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(=dontcare)"
+            }
+        }, 
+        {
+            "turn-index": 2, 
+            "goal-labels": {
+                "food": "dontcare", 
+                "pricerange": "cheap", 
+                "area": "south"
+            }, 
+            "transcription": "type of food", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002319_0002372.wav", 
+            "requested-slots": [
+                "food"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "food"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(food)"
+            }
+        }, 
+        {
+            "turn-index": 3, 
+            "goal-labels": {
+                "food": "dontcare", 
+                "pricerange": "cheap", 
+                "area": "south"
+            }, 
+            "transcription": "type of food", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002828_0002901.wav", 
+            "requested-slots": [
+                "food"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "food"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(food)"
+            }
+        }, 
+        {
+            "turn-index": 4, 
+            "goal-labels": {
+                "food": "dontcare", 
+                "pricerange": "cheap", 
+                "area": "south"
+            }, 
+            "transcription": "the address", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0003273_0003321.wav", 
+            "requested-slots": [
+                "addr"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "addr"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(addr)"
+            }
+        }, 
+        {
+            "turn-index": 5, 
+            "goal-labels": {
+                "food": "dontcare", 
+                "pricerange": "cheap", 
+                "area": "south"
+            }, 
+            "transcription": "thank you good bye", 
+            "method-label": "finished", 
+            "audio-file": "pt344x_0003937_0004004.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "thankyou"
+                    }, 
+                    {
+                        "slots": [], 
+                        "act": "bye"
+                    }
+                ], 
+                "cam": "thankyou()|bye()"
+            }
+        }
+    ], 
+    "task-information": {
+        "goal": {
+            "text": "Task 01602: You want to find a cheap restaurant and it should be in the south part of town. You want to know the address and type of food.", 
+            "request-slots": [
+                "addr", 
+                "food"
+            ], 
+            "constraints": [
+                [
+                    "pricerange", 
+                    "cheap"
+                ], 
+                [
+                    "area", 
+                    "south"
+                ]
+            ]
+        }, 
+        "feedback": {
+            "questionnaire": [
+                [
+                    "The system understood me well.", 
+                    "strongly agree"
+                ]
+            ], 
+            "comments": "Worked perfect on this one", 
+            "success": true
+        }
+    }, 
+    "session-id": "voip-14cb91bc48-20130328_163139"
+}

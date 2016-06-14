@@ -1,0 +1,241 @@
+{
+    "caller-id": "199d62165b", 
+    "turns": [
+        {
+            "turn-index": 0, 
+            "goal-labels": {
+                "area": "west"
+            }, 
+            "transcription": "i would like to find a restaurant in the west part of town that serves", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0000885_0001298.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "area", 
+                                "west"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(type=restaurant,area=west)"
+            }
+        }, 
+        {
+            "turn-index": 1, 
+            "goal-labels": {
+                "food": "turkish", 
+                "area": "west"
+            }, 
+            "transcription": "turkish food", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0001604_0001731.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "turkish"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(food=turkish)"
+            }
+        }, 
+        {
+            "turn-index": 2, 
+            "goal-labels": {
+                "food": "turkish", 
+                "area": "centre"
+            }, 
+            "transcription": "how about in the center", 
+            "method-label": "byalternatives", 
+            "audio-file": "pt344x_0002246_0002419.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "reqalts"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "area", 
+                                "centre"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "reqalts(area=centre)"
+            }
+        }, 
+        {
+            "turn-index": 3, 
+            "goal-labels": {
+                "food": "turkish", 
+                "area": "centre"
+            }, 
+            "transcription": "could i have the address and price range please", 
+            "method-label": "byalternatives", 
+            "audio-file": "pt344x_0003168_0003424.wav", 
+            "requested-slots": [
+                "pricerange", 
+                "addr"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "addr"
+                            ]
+                        ], 
+                        "act": "request"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "pricerange"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(addr,pricerange)"
+            }
+        }, 
+        {
+            "turn-index": 4, 
+            "goal-labels": {
+                "food": "turkish", 
+                "area": "centre"
+            }, 
+            "transcription": "thank you", 
+            "method-label": "byalternatives", 
+            "audio-file": "pt344x_0004105_0004199.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "thankyou"
+                    }
+                ], 
+                "cam": "thankyou()"
+            }
+        }, 
+        {
+            "turn-index": 5, 
+            "goal-labels": {
+                "food": "turkish", 
+                "area": "centre"
+            }, 
+            "transcription": "good bye", 
+            "method-label": "finished", 
+            "audio-file": "pt344x_0004257_0004354.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "bye"
+                    }
+                ], 
+                "cam": "bye()"
+            }
+        }, 
+        {
+            "turn-index": 6, 
+            "goal-labels": {
+                "food": "turkish", 
+                "area": "centre"
+            }, 
+            "transcription": "and whats the price range", 
+            "method-label": "finished", 
+            "audio-file": "pt344x_0005048_0005180.wav", 
+            "requested-slots": [
+                "pricerange"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "pricerange"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(pricerange)"
+            }
+        }, 
+        {
+            "turn-index": 7, 
+            "goal-labels": {
+                "food": "turkish", 
+                "area": "centre"
+            }, 
+            "transcription": "thank you good bye", 
+            "method-label": "finished", 
+            "audio-file": "pt344x_0005577_0005715.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "thankyou"
+                    }, 
+                    {
+                        "slots": [], 
+                        "act": "bye"
+                    }
+                ], 
+                "cam": "thankyou()|bye()"
+            }
+        }
+    ], 
+    "task-information": {
+        "goal": {
+            "text": "Task 11178: You want to find a restaurant in the west part of town and it should serve turkish food. If there is no such venue how about centre area. You want to know the address and price range.", 
+            "request-slots": [
+                "addr", 
+                "pricerange"
+            ], 
+            "constraints": [
+                [
+                    "food", 
+                    "turkish"
+                ], 
+                [
+                    "area", 
+                    "centre"
+                ]
+            ]
+        }, 
+        "feedback": {
+            "questionnaire": [
+                [
+                    "The system understood me well.", 
+                    "agree"
+                ]
+            ], 
+            "comments": null, 
+            "success": true
+        }
+    }, 
+    "session-id": "voip-199d62165b-20130402_121601"
+}

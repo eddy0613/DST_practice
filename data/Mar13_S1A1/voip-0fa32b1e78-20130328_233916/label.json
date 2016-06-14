@@ -1,0 +1,188 @@
+{
+    "caller-id": "0fa32b1e78", 
+    "turns": [
+        {
+            "turn-index": 0, 
+            "goal-labels": {
+                "area": "east"
+            }, 
+            "transcription": "im looking for a restaurant in the east part of town", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0000989_0001278.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "area", 
+                                "east"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(area=east,type=restaurant,task=find)"
+            }
+        }, 
+        {
+            "turn-index": 1, 
+            "goal-labels": {
+                "food": "turkish", 
+                "area": "east"
+            }, 
+            "transcription": "turkish food", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0001641_0001731.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "food", 
+                                "turkish"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(food=turkish)"
+            }
+        }, 
+        {
+            "turn-index": 2, 
+            "goal-labels": {
+                "food": "turkish", 
+                "area": "dontcare"
+            }, 
+            "transcription": "any area", 
+            "method-label": "byconstraints", 
+            "audio-file": "pt344x_0002350_0002433.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "area", 
+                                "dontcare"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "inform(area=dontcare)"
+            }
+        }, 
+        {
+            "turn-index": 3, 
+            "goal-labels": {
+                "food": "turkish", 
+                "area": "dontcare"
+            }, 
+            "transcription": "what about any area", 
+            "method-label": "byalternatives", 
+            "audio-file": "pt344x_0003078_0003228.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "reqalts"
+                    }, 
+                    {
+                        "slots": [
+                            [
+                                "area", 
+                                "dontcare"
+                            ]
+                        ], 
+                        "act": "inform"
+                    }
+                ], 
+                "cam": "reqalts(area=dontcare)"
+            }
+        }, 
+        {
+            "turn-index": 4, 
+            "goal-labels": {
+                "food": "turkish", 
+                "area": "dontcare"
+            }, 
+            "transcription": "whats their address", 
+            "method-label": "byalternatives", 
+            "audio-file": "pt344x_0003671_0003761.wav", 
+            "requested-slots": [
+                "addr"
+            ], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [
+                            [
+                                "slot", 
+                                "addr"
+                            ]
+                        ], 
+                        "act": "request"
+                    }
+                ], 
+                "cam": "request(addr)"
+            }
+        }, 
+        {
+            "turn-index": 5, 
+            "goal-labels": {
+                "food": "turkish", 
+                "area": "dontcare"
+            }, 
+            "transcription": "thank you good bye", 
+            "method-label": "finished", 
+            "audio-file": "pt344x_0004310_0004395.wav", 
+            "requested-slots": [], 
+            "semantics": {
+                "json": [
+                    {
+                        "slots": [], 
+                        "act": "thankyou"
+                    }, 
+                    {
+                        "slots": [], 
+                        "act": "bye"
+                    }
+                ], 
+                "cam": "thankyou()|bye()"
+            }
+        }
+    ], 
+    "task-information": {
+        "goal": {
+            "text": "Task 09423: You want to find a restaurant in the east part of town and it should serve turkish food. If there is no such venue how about any area. Make sure you get the address of the venue.", 
+            "request-slots": [
+                "addr"
+            ], 
+            "constraints": [
+                [
+                    "food", 
+                    "turkish"
+                ], 
+                [
+                    "area", 
+                    "dontcare"
+                ]
+            ]
+        }, 
+        "feedback": {
+            "questionnaire": [
+                [
+                    "The system understood me well.", 
+                    "agree"
+                ]
+            ], 
+            "comments": null, 
+            "success": true
+        }
+    }, 
+    "session-id": "voip-0fa32b1e78-20130328_233916"
+}
